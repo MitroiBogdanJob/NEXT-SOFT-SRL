@@ -1,0 +1,64 @@
+/* Stiluri generale pentru header */
+header {
+    background-color: rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur( 8.5px );
+    -webkit-backdrop-filter: blur( 2.5px );
+    padding: 10px 20px; /* Spațiu în jurul conținutului */
+    color: white; /* Culoarea textului */
+    display: flex;
+    justify-content: center; /* Centrează meniul pe orizontală */
+    align-items: center; /* Aliniază vertical */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Umbra pentru efect 3D */
+    border-radius: 20px; /* Colțuri rotunjite pentru header */
+    margin: 20px; /* Margină pentru a separa meniul de marginea paginii */
+    position: relative;
+    z-index: 10;
+}
+
+/* Logo-ul din partea stângă */
+header .logo {
+    font-size: 1.5rem; /* Mărimea textului */
+    font-weight: bold; /* Text îngroșat */
+    text-transform: uppercase; /* Majuscule */
+    text-decoration: none; /* Fără linie sub text */
+    color: white; /* Culoarea textului */
+    margin-right: 30px; /* Spațiu între logo și meniu */
+}
+
+/* Meniul de navigare */
+header nav ul {
+    list-style: none; /* Fără puncte sau numere */
+    margin: 0;
+    padding: 0;
+    display: inline-flex; /* Elemente pe orizontală, cu lățime variabilă în funcție de conținut */
+    gap: 15px; /* Spațiu între elemente */
+    border-radius: 15px; /* Colțuri rotunjite pentru meniu */
+    padding: 10px 20px; /* Padding pentru a face meniul mai larg */
+    background-color: rgba(255, 255, 255, 0.15); /* Fundal semitransparent pentru meniu */
+}
+
+/* Linkurile din meniu */
+header nav ul li a {
+    text-decoration: none; /* Fără subliniere */
+    color: white; /* Culoarea textului */
+    font-size: 1rem; /* Mărimea textului */
+    transition: color 0.3s ease; /* Efect de tranziție */
+}
+
+/* Efect hover pentru linkuri */
+header nav ul li a:hover {
+    color: #00bcd4; /* Culoare albastră deschisă */
+}
+
+/* Stiluri pentru meniul pe mobil */
+@media (max-width: 68px) {
+    header {
+        flex-direction: column; /* Elemente pe verticală */
+        align-items: center; /* Aliniere la stânga */
+    }
+
+    header nav ul {
+        flex-direction: column; /* Elemente pe verticală */
+        gap: 10px; /* Spațiu mai mic între elemente */
+    }
+}
