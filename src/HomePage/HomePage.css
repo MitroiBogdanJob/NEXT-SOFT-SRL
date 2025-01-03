@@ -14,7 +14,7 @@ h6 {
 .homepage-text-large_homepage-text-lg__24_gZ {
 	color: rgb(250, 250, 250);
 	text-align: center;
-	font-size: 1.25rem; /* Ajustează dimensiunea fontului pentru a fi mai mică decât titlul */
+	font-size: 1rem; /* Ajustează dimensiunea fontului pentru a fi mai mică decât titlul */
 	line-height: 1.8rem;
 	margin-top: 20px; /* Adaugă un spațiu între titlu și text */
 	max-width: 800px; /* Limitează lățimea textului pentru o aliniere mai bună */
