@@ -1,22 +1,70 @@
-h1, h2 {
-    --font-poppins: "__Poppins_67380f", "__Poppins_Fallback_67380f", sans;
-    background: transparent;
-    font-weight: 400;
-    font-size: 2rem;
-    line-height: 5rem;
-    font-family: var(--font-poppins);
-    text-align: center;
-    margin: 0;
- }
- 
- .homepage-text-large_homepage-text-lg__24_gZ {
-    color: rgb(250, 250, 250);
-    text-align: center;
-    font-size: 1.25rem; /* Ajustează dimensiunea fontului pentru a fi mai mică decât titlul */
-    line-height: 1.8rem;
-    margin-top: 20px; /* Adaugă un spațiu între titlu și text */
-    max-width: 800px; /* Limitează lățimea textului pentru o aliniere mai bună */
-    margin-left: auto;
-    margin-right: auto;
- }
- 
+h6 {
+	--font-poppins: "__Poppins_67380f", "__Poppins_Fallback_67380f", sans;
+	background: transparent;
+	font-weight: 400;
+	font-size: 2rem;
+	line-height: 5rem;
+	font-family: var(--font-poppins);
+	text-align: center;
+	margin: 0;
+	color: rgba(13, 20, 23, 0.654);
+	text-shadow: 4px 0 6px rgba(0, 0, 0, 0.57);
+}
+
+.homepage-text-large_homepage-text-lg__24_gZ {
+	color: rgb(250, 250, 250);
+	text-align: center;
+	font-size: 1.25rem; /* Ajustează dimensiunea fontului pentru a fi mai mică decât titlul */
+	line-height: 1.8rem;
+	margin-top: 20px; /* Adaugă un spațiu între titlu și text */
+	max-width: 800px; /* Limitează lățimea textului pentru o aliniere mai bună */
+	margin-left: auto;
+	margin-right: auto;
+}
+
+a.button_primary__PKbTQ,
+button.button_primary__PKbTQ {
+	--darkreader-bg--tw-bg-opacity: 1;
+	background-color: rgba(33, 38, 40, 0.15);
+	--darkreader-text--tw-text-opacity: 1;
+	color: rgb(210, 206, 199);
+}
+a.button_primary__PKbTQ,
+button.button_primary__PKbTQ {
+	border-radius: 9999px;
+	--tw-bg-opacity: 1;
+	background-color: rgb(213 213 213 / var(--tw-bg-opacity, 1));
+	--tw-text-opacity: 1;
+	color: rgb(35 35 35 / var(--tw-text-opacity, 1));
+}
+a.button_btn__WNegR,
+button.button_btn__WNegR {
+	display: inline-flex;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+	padding: 0.75rem 2.25rem;
+	text-align: center;
+	transition-property: all;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 0.15s;
+}
+.main-grid-container_layout__U1y93 * {
+	max-width: 100%;
+}
+
+a {
+	color: rgba(230, 227, 223, 0.75);
+}
+
+a {
+	color: inherit;
+	text-decoration-color: inherit;
+}
+@media (min-width: 768px) {
+	a {
+		font-size: 1rem;
+		line-height: 1.5rem;
+	}
+}
