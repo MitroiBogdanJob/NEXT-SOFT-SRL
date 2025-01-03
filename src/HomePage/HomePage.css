@@ -67,4 +67,36 @@ a {
 		font-size: 1rem;
 		line-height: 1.5rem;
 	}
+
+	/* Containerul principal care va conține butonul */
+	.menu-contain-text-left {
+		flex-direction: column; /* Aliniem elementele pe verticală */
+		justify-content: center; /* Aliniem vertical în centrul paginii */
+		align-items: center; /* Aliniem pe orizontală în centrul paginii */
+		height: 100vh; /* Înălțimea containerului va fi 100% din înălțimea paginii */
+		text-align: center; /* Aliniem textul din interior */
+	}
+
+	/* BUTTON -	Let’s start your first project together */
+	.transparent-button {
+		border-radius: 15px; /* Colțuri rotunjite pentru meniu */
+		padding: 10px 20px; /* Padding pentru a face meniul mai larg */
+		background-color: rgba(7, 9, 10, 0.15);
+		background: transparent;
+		border: 2px solid rgba(0, 0, 0, 0.57);
+		font-size: 1rem;
+		cursor: pointer;
+		transition: all 0.3s ease;
+		margin-top: 20px; /* Adăugăm spațiu între text și buton */
+	}
+
+	/* Efect hover pentru buton */
+	.transparent-button:hover {
+		background-color: rgba(0, 188, 212, 0.1);
+		color: white;
+		border-color: #00bcd4;
+		transform: scale(1.05);
+	}
+
+	/* BUTTON - Let’s start your first project together */
 }

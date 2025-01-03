@@ -5,7 +5,6 @@ header {
 	display: flex;
 	justify-content: center; /* Centrează meniul pe orizontală */
 	align-items: center; /* Aliniază vertical */
-
 	margin: 0px; /* Margină pentru a separa meniul de marginea paginii */
 	position: relative;
 	z-index: 10;
