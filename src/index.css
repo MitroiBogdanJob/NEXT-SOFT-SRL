@@ -1,53 +1,48 @@
 .background-gradient_main-container__Z3ZLQ.background-gradient_visible__MMKDU {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  opacity: 1; /* Fă-l complet vizibil */
-  z-index: 1; /* Asigură-te că este sub alte elemente */
+	position: relative;
+	width: 100%;
+	height: 100%;
+	opacity: 1; /* Fă-l complet vizibil */
 }
 
 .background-gradient_main-container__Z3ZLQ {
-  --tw-blur: blur(84px);
-  filter: var(--tw-blur);
-  transition: opacity 1s cubic-bezier(.4, 0, .2, 1);
-  background: transparent;
+	--tw-blur: blur(84px);
+	filter: var(--tw-blur);
+	transition: opacity 1s cubic-bezier(0.4, 0, 0.2, 1);
+	background: transparent;
 }
 
 body {
-  margin: 0;
-  overflow: hidden; /* Pentru a elimina scroll-ul */
+	margin: 0;
+	overflow: hidden; /* Pentru a elimina scroll-ul */
 }
 
-
 body {
-  overflow-y: auto;
-  text-align: center;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	overflow-y: auto;
+	text-align: center;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+		"Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+		monospace;
 }
 
-#root
-{
-z-index: 2;
-position: absolute;
-top:30px;
-left:0;
-width: 100%;
-text-align: center;
-pointer-events: auto; 
+#root {
+	z-index: 1;
+	position: absolute;
+	top: 30px;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	pointer-events: auto;
 }
 
-
-.menu-contain-text-left
-{
-  text-align: left;
+.menu-contain-text-left {
+	text-align: left;
 }

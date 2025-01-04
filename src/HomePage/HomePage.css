@@ -87,7 +87,7 @@ a {
 		font-size: 1rem;
 		cursor: pointer;
 		transition: all 0.3s ease;
-		margin-top: 10px; /* Adăugăm spațiu între text și buton */
+		margin-top: 20px; /* Adăugăm spațiu între text și buton */
 	}
 
 	/* Efect hover pentru buton */

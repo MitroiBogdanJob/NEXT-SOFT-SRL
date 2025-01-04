@@ -8,6 +8,8 @@ header {
 	margin: 0px; /* Margină pentru a separa meniul de marginea paginii */
 	position: relative;
 	z-index: 10;
+	padding: 3px 52px; /* Padding pentru a face meniul mai larg */
+	display: inline-flex;
 }
 
 /* Logo-ul din partea stângă */
@@ -16,7 +18,8 @@ header .logo {
 	height: auto;
 	padding: 0px;
 	margin: 10px;
-	text-decoration: none; /* Fără linie sub text */
+	margin-right: 15px;
+	margin-left: 0px;
 }
 
 /* Meniul de navigare */
