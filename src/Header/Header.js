@@ -7,7 +7,9 @@ function Header() {
 	return (
 		<header className="header-container">
 			{/* Adăugăm logo-ul */}
-			<img src={logo} alt="Logo" className="logo" />
+			<Link to="./">
+				<img src={logo} alt="Logo" className="logo" />
+			</Link>
 
 			<nav>
 				<ul>

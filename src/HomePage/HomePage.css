@@ -99,4 +99,12 @@ a {
 	}
 
 	/* BUTTON - Let’s start your first project together */
+	.customers-three-d-globe_wrapp__RCA9Y {
+		grid-column: 1 / -1;
+		display: grid;
+		grid-template-columns: subgrid;
+	}
+	.main-grid-container_layout__U1y93 * {
+		max-width: 100%;
+	}
 }
