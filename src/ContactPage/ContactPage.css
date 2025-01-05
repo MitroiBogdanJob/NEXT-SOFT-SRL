@@ -1,0 +1,38 @@
+/* Contact.css */
+.contact-container {
+	max-width: auto;
+	margin: 0 auto;
+	font-family: "Arial", sans-serif;
+	padding: 10px 20px; /* Spațiere pentru a face meniul mai larg */
+	background-color: rgba(
+		255,
+		255,
+		255,
+		0.15
+	); /* Fundal semitransparent pentru meniu */
+}
+
+h1 {
+	text-align: center;
+	color: #333;
+	font-size: 3em; /* Dimensiune mare pentru titlu */
+}
+
+.contact-info {
+	margin-top: 20px;
+}
+
+.contact-info p {
+	font-size: 1.3em; /* Dimensiune text mai mare pentru lizibilitate */
+	margin-bottom: 15px;
+	color: #444; /* Culoare text pentru contrast */
+}
+
+.contact-info a {
+	color: #007bff; /* Albastru pentru link-uri */
+	text-decoration: none; /* Fără subliniere implicită */
+}
+
+.contact-info a:hover {
+	text-decoration: underline; /* Subliniere la hover */
+}
