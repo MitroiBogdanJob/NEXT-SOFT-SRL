@@ -1,6 +1,6 @@
 import React from "react";
 import "./HomePage.css";
-
+import { Link } from "react-router-dom";
 function HomePage() {
 	return (
 		<>
@@ -8,7 +8,9 @@ function HomePage() {
 				<h6>Your Trusted Partner in Web Solutions</h6>
 				{/* Butonul adăugat după h6 */}
 				<button className="transparent-button">
-					<a> Let’s start your first project together </a>
+					<Link to="/form-contact">
+						Let’s start your first project together
+					</Link>
 				</button>
 			</div>
 			<div className="menu-contain-text-left">
