@@ -1,3 +1,4 @@
+/* Stilurile existente pentru text și layout */
 h6 {
 	--font-poppins: "__Poppins_67380f", "__Poppins_Fallback_67380f", sans;
 	background: transparent;
@@ -14,97 +15,103 @@ h6 {
 .homepage-text-large_homepage-text-lg__24_gZ {
 	color: rgb(250, 250, 250);
 	text-align: center;
-	font-size: 1rem; /* Ajustează dimensiunea fontului pentru a fi mai mică decât titlul */
+	font-size: 1rem;
 	line-height: 1.8rem;
-	margin-top: 20px; /* Adaugă un spațiu între titlu și text */
-	max-width: 800px; /* Limitează lățimea textului pentru o aliniere mai bună */
+	margin-top: 20px;
+	max-width: 800px;
 	margin-left: auto;
 	margin-right: auto;
 }
 
 a.button_primary__PKbTQ,
 button.button_primary__PKbTQ {
-	--darkreader-bg--tw-bg-opacity: 1;
-	background-color: rgba(33, 38, 40, 0.15);
-	--darkreader-text--tw-text-opacity: 1;
-	color: rgb(210, 206, 199);
-}
-a.button_primary__PKbTQ,
-button.button_primary__PKbTQ {
 	border-radius: 9999px;
-	--tw-bg-opacity: 1;
-	background-color: rgb(213 213 213 / var(--tw-bg-opacity, 1));
-	--tw-text-opacity: 1;
-	color: rgb(35 35 35 / var(--tw-text-opacity, 1));
+	background-color: rgb(213 213 213 / 1);
+	color: rgb(35 35 35 / 1);
 }
+
 a.button_btn__WNegR,
 button.button_btn__WNegR {
 	display: inline-flex;
 	cursor: pointer;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	user-select: none;
 	padding: 0.75rem 2.25rem;
 	text-align: center;
-	transition-property: all;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-	transition-duration: 0.15s;
-}
-.main-grid-container_layout__U1y93 * {
-	max-width: 100%;
+	transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-a {
-	color: rgba(230, 227, 223, 0.75);
+.menu-contain-text-left {
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	text-align: center;
 }
 
-a {
-	color: inherit;
-	text-decoration-color: inherit;
+.transparent-button {
+	border-radius: 15px;
+	padding: 10px 20px;
+	background: transparent;
+	border: 2px solid rgba(0, 0, 0, 0.57);
+	font-size: 1rem;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	margin-top: 20px;
 }
-@media (min-width: 768px) {
-	a {
-		font-size: 1rem;
-		line-height: 1.5rem;
-	}
 
-	/* Containerul principal care va conține butonul */
-	.menu-contain-text-left {
-		flex-direction: column; /* Aliniem elementele pe verticală */
-		justify-content: center; /* Aliniem vertical în centrul paginii */
-		align-items: center; /* Aliniem pe orizontală în centrul paginii */
-		height: 100vh; /* Înălțimea containerului va fi 100% din înălțimea paginii */
-		text-align: center; /* Aliniem textul din interior */
-	}
+.transparent-button:hover {
+	background-color: rgba(0, 188, 212, 0.1);
+	color: white;
+	border-color: #00bcd4;
+	transform: scale(1.05);
+}
 
-	/* BUTTON -	Let’s start your first project together */
-	.transparent-button {
-		border-radius: 15px; /* Colțuri rotunjite pentru meniu */
-		padding: 10px 20px; /* Padding pentru a face meniul mai larg */
-		background-color: rgba(7, 9, 10, 0.15);
-		background: transparent;
-		border: 2px solid rgba(0, 0, 0, 0.57);
-		font-size: 1rem;
-		cursor: pointer;
-		transition: all 0.3s ease;
-		margin-top: 20px; /* Adăugăm spațiu între text și buton */
-	}
+/* === Stiluri pentru secțiunea 3D === */
 
-	/* Efect hover pentru buton */
-	.transparent-button:hover {
-		background-color: rgba(0, 188, 212, 0.1);
-		color: white;
-		border-color: #00bcd4;
-		transform: scale(1.05);
-	}
+/* Canvas-ul 3D */
+canvas {
+	width: 100%;
+	height: 400px;
+	background-color: #000;
+}
 
-	/* BUTTON - Let’s start your first project together */
-	.customers-three-d-globe_wrapp__RCA9Y {
-		grid-column: 1 / -1;
-		display: grid;
-		grid-template-columns: subgrid;
-	}
-	.main-grid-container_layout__U1y93 * {
-		max-width: 100%;
-	}
+/* Stiluri pentru sferele interactive */
+.sphere {
+	cursor: pointer;
+	transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.sphere:hover {
+	transform: scale(1.2);
+	background-color: #00bcd4;
+}
+
+/* Afișează imaginea pe hover */
+.sphere img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 150px;
+	height: 150px;
+	display: none;
+	border-radius: 50%;
+}
+
+.sphere:hover img {
+	display: block;
+}
+
+/* Textul din interiorul sferei */
+.sphere-text {
+	color: white;
+	text-align: center;
+	font-size: 0.9rem;
+}
+
+/* Stiluri pentru imaginea de fundal */
+.sphere-background {
+	border-radius: 50%;
+	background-size: cover;
+	background-position: center;
+	width: 100px;
+	height: 100px;
 }

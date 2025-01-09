@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import "./HomePage.css";
 
 function HomePage() {
@@ -8,7 +8,7 @@ function HomePage() {
 				<h6>Your Trusted Partner in Web Solutions</h6>
 				{/* Butonul adăugat după h6 */}
 				<button className="transparent-button">
-				<a> Let’s start your first project together </a>	
+					<a> Let’s start your first project together </a>
 				</button>
 			</div>
 			<div className="menu-contain-text-left">

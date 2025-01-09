@@ -1,0 +1,85 @@
+/* Stiluri generale pentru header */
+header {
+	padding: 0px; /* Spațiu în jurul conținutului */
+	color: white; /* Culoarea textului */
+	display: flex;
+	justify-content: center; /* Centrează meniul pe orizontală */
+	align-items: center; /* Aliniază vertical */
+	margin: 0px; /* Margină pentru a separa meniul de marginea paginii */
+	position: relative;
+	z-index: 10;
+	padding: 3px 52px; /* Padding pentru a face meniul mai larg */
+	display: inline-flex;
+}
+
+/* Logo-ul din partea stângă */
+header .logo {
+	width: 48px; /* Poți ajusta dimensiunea */
+	height: auto;
+	padding: 0px;
+	margin: 10px;
+	margin-right: 15px;
+	margin-left: 0px;
+}
+
+/* Meniul de navigare */
+header nav ul {
+	list-style: none; /* Fără puncte sau numere */
+	margin: 0;
+	padding: 0;
+	display: inline-flex; /* Elemente pe orizontală, cu lățime variabilă în funcție de conținut */
+	gap: 15px; /* Spațiu între elemente */
+	border-radius: 15px; /* Colțuri rotunjite pentru meniu */
+	padding: 10px 20px; /* Padding pentru a face meniul mai larg */
+	background-color: rgba(
+		255,
+		255,
+		255,
+		0.15
+	); /* Fundal semitransparent pentru meniu */
+}
+
+/* Linkurile din meniu */
+header nav ul li a {
+	text-decoration: none; /* Fără subliniere */
+	color: white; /* Culoarea textului */
+	font-size: 1rem; /* Mărimea textului */
+	transition: color 0.3s ease; /* Efect de tranziție */
+}
+
+/* Efect hover pentru linkuri */
+header nav ul li a:hover {
+	color: #00bcd4; /* Culoare albastră deschisă */
+}
+
+/* Stiluri pentru meniul pe mobil */
+@media (max-width: 68px) {
+	header {
+		flex-direction: column; /* Elemente pe verticală */
+		align-items: center; /* Aliniere la stânga */
+	}
+
+	header nav ul {
+		flex-direction: column; /* Elemente pe verticală */
+		gap: 10px; /* Spațiu mai mic între elemente */
+	}
+
+	.logo {
+		width: 49px; /* Poți ajusta dimensiunea */
+		height: auto;
+		padding: 0px;
+		margin: 0px;
+		border-width: 0px;
+		border-style: solid;
+		border-color: initial;
+	}
+	navigation-bar_bar__GLtNP {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.main-grid-container_layout__U1y93 * {
+		max-width: 100%;
+	}
+}
