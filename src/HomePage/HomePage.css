@@ -1,5 +1,5 @@
 /* Stilurile existente pentru text și layout */
-h6 {
+.homepage h6 {
 	--font-poppins: "__Poppins_67380f", "__Poppins_Fallback_67380f", sans;
 	background: transparent;
 	font-weight: 400;
