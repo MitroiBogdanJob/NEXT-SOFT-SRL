@@ -11,46 +11,12 @@
 	margin-right: auto;
 }
 
-a.button_primary__PKbTQ,
-button.button_primary__PKbTQ {
-	border-radius: 9999px;
-	background-color: rgb(213 213 213 / 1);
-	color: rgb(35 35 35 / 1);
-}
-
-a.button_btn__WNegR,
-button.button_btn__WNegR {
-	display: inline-flex;
-	cursor: pointer;
-	padding: 0.75rem 2.25rem;
-	text-align: center;
-	transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .menu-contain-text-left {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	height: 100vh;
 	text-align: center;
-}
-
-.transparent-button {
-	border-radius: 15px;
-	padding: 10px 20px;
-	background: transparent;
-	border: 2px solid rgba(0, 0, 0, 0.57);
-	font-size: 1.2rem;
-	cursor: pointer;
-	transition: all 0.3s ease;
-	margin-top: 20px;
-}
-
-.transparent-button:hover {
-	background-color: rgba(0, 188, 212, 0.1);
-	color: white;
-	border-color: #00bcd4;
-	transform: scale(1.05);
 }
 
 /* === Stiluri pentru secțiunea 3D === */
@@ -102,4 +68,26 @@ canvas {
 	background-position: center;
 	width: 100px;
 	height: 100px;
+}
+
+.transparent-button {
+	border-radius: 15px;
+	padding: 10px 20px;
+	background: transparent;
+	border: 2px solid rgba(0, 0, 0, 0.57);
+	font-size: 1.2rem;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	margin-top: 20px;
+	text-decoration: none; /* Elimină sublinierea implicită a Link */
+	color: inherit; /* Păstrează culoarea textului */
+	display: inline-block; /* Pentru a se comporta ca un buton */
+	text-align: center;
+}
+
+.transparent-button:hover {
+	background-color: rgba(0, 188, 212, 0.1);
+	color: white;
+	border-color: #00bcd4;
+	transform: scale(1.05);
 }

@@ -1,17 +1,16 @@
 import React from "react";
 import "./HomePage.css";
 import { Link } from "react-router-dom";
+
 function HomePage() {
 	return (
 		<>
 			<div>
 				<h6>Your Trusted Partner in Web Solutions</h6>
-				{/* Butonul adăugat după h6 */}
-				<button className="transparent-button">
-					<Link to="/form-contact">
-						Let’s start your first project together
-					</Link>
-				</button>
+				{/* Link-ul stilizat ca buton */}
+				<Link to="/form-contact" className="transparent-button">
+					Let’s start your first project together
+				</Link>
 			</div>
 			<div className="menu-contain-text-left">
 				<p className="text-large homepage-text-large_homepage-text-lg__24_gZ">
