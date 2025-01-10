@@ -9,7 +9,7 @@ const ContactPage = () => {
 
 	return (
 		<div className="contact-container">
-			<h1>Contact Us</h1>
+			<h6>Contact Us</h6>
 			<div className="contact-info">
 				<p>
 					<strong>Company:</strong> {companyName}
