@@ -41,7 +41,7 @@ function ContactForm() {
           <label htmlFor="email">Email </label>
           <input type="email" id="email" name="email"></input> <br />
           <br />
-          <label htmlFor="date">Pick a date</label>
+          <label htmlFor="date">Pick a date </label>
           <input
             type="date"
             id="date"

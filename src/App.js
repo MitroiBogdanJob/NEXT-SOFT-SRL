@@ -7,14 +7,14 @@ import HomePage from "./HomePage/HomePage";
 import AboutPage from "./AboutPage/AboutPage";
 import ContactPage from "./ContactPage/ContactPage";
 import ServicesPage from "./ServicesPage/ServicesPage";
-import FormContact from "./ContactForm/ContactForm";
+import ContactForm from "./ContactForm/ContactForm";
 function App() {
 	return (
 		<Router>
 			<Header />
 			<Routes>
 				<Route path="/" element={<HomePage />} />
-				<Route path="/Form-Contact" element={<FormContact />} />
+				<Route path="/Form-Contact" element={<ContactForm />} />
 				<Route path="/About" element={<AboutPage />} />
 				<Route path="/Contact" element={<ContactPage />} />
 				<Route path="/Services" element={<ServicesPage />} />

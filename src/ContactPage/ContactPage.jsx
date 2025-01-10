@@ -12,17 +12,17 @@ const ContactPage = () => {
 			<h6>Contact Us</h6>
 			<div className="contact-info">
 				<p>
-					<strong>Company:</strong> {companyName}
+					<strong>Company:  </strong> {companyName}
 				</p>
 				<p>
-					<strong>Email:</strong> <a href={`mailto:${email}`}>{email}</a>
+					<strong>Email:  </strong> <a href={`mailto:${email}`}>{email}</a>
 				</p>
 				<p>
-					<strong>Phone Number:</strong>{" "}
+					<strong>Phone Number:  </strong>{" "}
 					<a href={`tel:${phoneNumber}`}>{phoneNumber}</a>
 				</p>
 				<p>
-					<strong>Address:</strong> {address}
+					<strong>Address:  </strong> {address}
 				</p>
 			</div>
 		</div>
