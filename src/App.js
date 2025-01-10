@@ -14,9 +14,9 @@ function App() {
 			<Header />
 			<Routes>
 				<Route path="/" element={<HomePage />} />
-				<Route path="/Form-Contact" element={<ContactForm />} />
+				<Route path="/ContactForm" element={<ContactForm />} />
 				<Route path="/About" element={<AboutPage />} />
-				<Route path="/Contact" element={<ContactPage />} />
+				<Route path="/ContactUs" element={<ContactPage />} />
 				<Route path="/Services" element={<ServicesPage />} />
 			</Routes>
 			<Footer />
