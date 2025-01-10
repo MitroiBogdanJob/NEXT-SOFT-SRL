@@ -8,7 +8,7 @@ function HomePage() {
 			<div>
 				<h6>Your Trusted Partner in Web Solutions</h6>
 				{/* Link-ul stilizat ca buton */}
-				<Link to="/form-contact" className="transparent-button">
+				<Link to="/ContactForm" className="transparent-button">
 					Let’s start your first project together
 				</Link>
 			</div>

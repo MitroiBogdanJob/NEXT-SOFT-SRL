@@ -23,7 +23,7 @@ function Header() {
 						<Link to="/Services">Services</Link>
 					</li>
 					<li>
-						<Link to="/Contact">Contact</Link>
+						<Link to="/ContactUs">Contact</Link>
 					</li>
 				</ul>
 			</nav>
