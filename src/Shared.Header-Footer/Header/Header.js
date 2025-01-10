@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom"; // Adaugă acest import
 import "./Header.css";
-import logo from "../../Logo/Next Soft LOGO.png";
+import logo from "../../Images/Logo/Next Soft LOGO.png";
 
 function Header() {
 	return (

@@ -3,14 +3,22 @@
 	height: 200px;
 	animation: rotate 10s linear infinite;
 	object-fit: contain; /* Asigură-te că imaginea rămâne proporțională */
-	margin: 0 auto; /* Centrează imaginea */
+	margin: 0; /* Centrează imaginea */
+}
+@keyframes rotate {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
 }
 
 h6 {
 	--font-poppins: "__Poppins_67380f", "__Poppins_Fallback_67380f", sans;
 	background: transparent;
 	font-weight: 200;
-	font-size: 2.7rem;
+	font-size: 2.3rem;
 	line-height: 5rem;
 	font-family: var(--font-poppins);
 	text-align: center;
@@ -102,11 +110,10 @@ button:active {
 	transform: scale(0.95); /* Efect de apăsare */
 }
 
-@keyframes rotate {
-	from {
-		transform: rotate(0deg);
-	}
-	to {
-		transform: rotate(360deg);
-	}
+.confirmationMessage {
+	font-size: 1.2rem;
+	font-weight: bold;
+	text-align: center;
+	color: rgba(13, 20, 23, 0.8);
+	margin-top: 20px;
 }

@@ -8,7 +8,7 @@ header {
 	margin: 0px; /* Margină pentru a separa meniul de marginea paginii */
 	position: relative;
 	z-index: 10;
-	padding: 3px 52px; /* Padding pentru a face meniul mai larg */
+	padding: 5px 52px; /* Padding pentru a face meniul mai larg */
 	display: inline-flex;
 }
 
@@ -43,7 +43,7 @@ header nav ul {
 header nav ul li a {
 	text-decoration: none; /* Fără subliniere */
 	color: white; /* Culoarea textului */
-	font-size: 1rem; /* Mărimea textului */
+	font-size: 1.5rem; /* Mărimea textului */
 	transition: color 0.3s ease; /* Efect de tranziție */
 }
 

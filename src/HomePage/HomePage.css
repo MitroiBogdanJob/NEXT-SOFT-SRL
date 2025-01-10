@@ -2,9 +2,9 @@
 .homepage h6 {
 	--font-poppins: "__Poppins_67380f", "__Poppins_Fallback_67380f", sans;
 	background: transparent;
-	font-weight: 400;
-	font-size: 2rem;
-	line-height: 5rem;
+	font-weight: 300;
+	font-size: 1rem;
+	line-height: 1rem;
 	font-family: var(--font-poppins);
 	text-align: center;
 	margin: 0;
