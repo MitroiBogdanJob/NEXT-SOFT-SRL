@@ -14,7 +14,7 @@ header {
 
 /* Logo-ul din partea stângă */
 header .logo {
-	width: 48px; /* Poți ajusta dimensiunea */
+	width: 60px; /* Poți ajusta dimensiunea */
 	height: auto;
 	padding: 0px;
 	margin: 10px;
@@ -43,7 +43,7 @@ header nav ul {
 header nav ul li a {
 	text-decoration: none; /* Fără subliniere */
 	color: white; /* Culoarea textului */
-	font-size: 1.5rem; /* Mărimea textului */
+	font-size: 1.4rem; /* Mărimea textului */
 	transition: color 0.3s ease; /* Efect de tranziție */
 }
 
@@ -59,27 +59,9 @@ header nav ul li a:hover {
 		align-items: center; /* Aliniere la stânga */
 	}
 
-	header nav ul {
-		flex-direction: column; /* Elemente pe verticală */
-		gap: 10px; /* Spațiu mai mic între elemente */
-	}
-
-	.logo {
-		width: 49px; /* Poți ajusta dimensiunea */
-		height: auto;
-		padding: 0px;
-		margin: 0px;
-		border-width: 0px;
-		border-style: solid;
-		border-color: initial;
-	}
 	navigation-bar_bar__GLtNP {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-	}
-
-	.main-grid-container_layout__U1y93 * {
-		max-width: 100%;
 	}
 }
