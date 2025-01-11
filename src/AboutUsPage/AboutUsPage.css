@@ -1,9 +1,14 @@
 .Who-We-Are {
-	color: rgb(93, 42, 165);
-	font-size: 50px;
+	color: rgb(33, 118, 183);
+	font-size: 40px;
 }
 .aboutU-first {
 	color: rgb(106, 0, 255);
-	font-size: 15px;
+	font-size: 16.7px;
 }
 
+.aboutU {
+	width: 100%;
+	height: auto;
+	opacity: 0.8;
+}

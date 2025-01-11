@@ -35,9 +35,10 @@
 }
 .img1 {
 	align-items: center;
-	width: 500px; /* lățimea dorită */
-	height: 300px; /* înălțimea dorită */
+	width: 100px; /* lățimea dorită */
+	height: 100px; /* înălțimea dorită */
 	opacity: 0.8;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Canvas-ul 3D */

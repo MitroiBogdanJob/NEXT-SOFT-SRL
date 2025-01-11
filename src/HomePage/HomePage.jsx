@@ -1,11 +1,11 @@
 import React from "react";
 import "./HomePage.css";
 import { Link } from "react-router-dom";
-import img1 from "../Images/ImagesOnPage/img1.jpg";
+import img1 from "../Images/ImagesOnPage/img1.png";
 function HomePage() {
 	return (
 		<>
-			<h6>Your Trusted Partner in Web Solutions</h6>
+			<h6>Your Trusted Partner in Software Solutions</h6>
 			<div className="first-text">
 				No matter what software you need, our team can develop it.
 				<br />
@@ -42,7 +42,7 @@ function HomePage() {
 					your <strong className="strong-font-normal">business needs</strong>.
 					We provide impactful, scalable, and{" "}
 					<strong className="strong-font-normal">
-						user-friendly digital products
+						user-friendly digital products{" "}
 					</strong>
 					that drive your{" "}
 					<strong className="strong-font-normal">business growth</strong>{" "}
