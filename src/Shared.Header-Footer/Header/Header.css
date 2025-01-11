@@ -28,7 +28,7 @@ header nav ul {
 	margin: 0;
 	padding: 0;
 	display: inline-flex; /* Elemente pe orizontală, cu lățime variabilă în funcție de conținut */
-	gap: 15px; /* Spațiu între elemente */
+	gap: 40px; /* Spațiu între elemente */
 	border-radius: 15px; /* Colțuri rotunjite pentru meniu */
 	padding: 10px 20px; /* Padding pentru a face meniul mai larg */
 	background-color: rgba(

@@ -11,6 +11,21 @@
 	margin-right: auto;
 }
 
+.first-text {
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: rgb(250, 250, 250);
+	text-align: center;
+	font-size: 1.3rem;
+	line-height: 1.8rem;
+	margin-top: 20px;
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .menu-contain-text-left {
 	flex-direction: column;
 	justify-content: center;
@@ -18,8 +33,12 @@
 	height: 100vh;
 	text-align: center;
 }
-
-/* === Stiluri pentru secțiunea 3D === */
+.img1 {
+	align-items: center;
+	width: 500px; /* lățimea dorită */
+	height: 300px; /* înălțimea dorită */
+	opacity: 0.8;
+}
 
 /* Canvas-ul 3D */
 canvas {
