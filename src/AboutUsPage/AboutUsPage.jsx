@@ -14,7 +14,7 @@ function AboutUsPage() {
 		<>
 			<h6>About Us</h6>
 			<br />
-			<br />
+				<br />
 			<div className="Who-We-Are">Who We Are?</div>
 			<div className="aboutU-first">
 				-We transform lives through technology-
