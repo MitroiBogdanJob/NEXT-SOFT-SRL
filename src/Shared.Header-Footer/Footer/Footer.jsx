@@ -8,6 +8,7 @@ const Footer = () => {
 			<div className="footer-content">
 				<div className="footer-column">
 					<h4>Useful Links</h4>
+					<h4>- Legal -</h4>
 					<ul className="footer-list">
 						<li>
 							<Link to="/privacy-policy" className="footer-link">

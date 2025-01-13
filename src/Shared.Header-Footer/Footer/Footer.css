@@ -11,19 +11,6 @@
 }
 
 /* Footer */
-.footer {
-	borede-top: 10px;
-	display: flex;
-	flex-direction: column;
-	width: 100%;
-	margin: 30px auto; /* Centrare orizontală */
-	opacity: 0.6;
-	background-color: #333;
-	color: white;
-	padding: 20px 15px 10px 5px; /* 20px sus, 15px dreapta, 10px jos, 5px stânga */
-	border-radius: 50px;
-	align-items: center;
-}
 
 .footer {
 	box-sizing: border-box;
@@ -93,4 +80,18 @@
 	color: #007bff; /* Schimbă culoarea la albastru pe hover */
 	transform: translateY(-5px) rotateX(5deg) rotateY(5deg); /* Ridică și rotește ușor pentru efect 3D */
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adaugă o umbră subtilă pentru profunzime */
+}
+
+.footer {
+	font-size: 15px;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin: 30px auto; /* Centrare orizontală */
+	opacity: 0.6;
+	background-color: #333;
+	color: white;
+	padding: 20px 15px 10px 5px; /* 20px sus, 15px dreapta, 10px jos, 5px stânga */
+	border-radius: 50px;
+	align-items: center;
 }
