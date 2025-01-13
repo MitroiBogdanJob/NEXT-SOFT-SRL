@@ -1,7 +1,11 @@
 import React from "react";
 import "./HomePage.css";
 import { Link } from "react-router-dom";
-import img1 from "../Images/ImagesOnPage/img1.png";
+
+import pcaps from "./Images-HomePage/pcaps.png";
+import apiaps from "./Images-HomePage/apiaps.png";
+import erpaps from "./Images-HomePage/erpaps.webp";
+
 function HomePage() {
 	return (
 		<>
@@ -26,7 +30,9 @@ function HomePage() {
 						<br />
 						<br />
 					</div>
-					<img className="img1" src={img1} alt="img1" />
+					<img className="pcaps" src={pcaps} alt="pcaps" />
+					<img className="erpaps" src={erpaps} alt="erpaps" />
+					<img className="apiaps" src={apiaps} alt="apiaps" />
 					<br />
 					At <strong className="strong-font-normal highlight">NEXT SOFT</strong>
 					, we bring your ideas to life through expert development and design

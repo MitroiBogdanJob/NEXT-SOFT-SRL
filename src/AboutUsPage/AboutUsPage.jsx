@@ -7,14 +7,14 @@ import webApp from "../ImageSlider/ImagesForSlider-AboutUsPage/webApp.PNG";
 import apiApp from "../ImageSlider/ImagesForSlider-AboutUsPage/apiApp.PNG";
 import erpApp from "../ImageSlider/ImagesForSlider-AboutUsPage/erpApp2.PNG";
 
-const sliderImages = [desktopApp, webApp, apiApp, erpApp];
+const sliderImages = [apiApp, webApp, erpApp, desktopApp];
 
 function AboutUsPage() {
 	return (
 		<>
 			<h6>About Us</h6>
 			<br />
-				<br />
+			<br />
 			<div className="Who-We-Are">Who We Are?</div>
 			<div className="aboutU-first">
 				-We transform lives through technology-

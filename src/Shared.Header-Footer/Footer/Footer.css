@@ -1,5 +1,3 @@
-/* Asigură-te că body ocupă întreaga înălțime a paginii */
-
 /* Containerul principal pentru pagină */
 .page-container {
 	display: flex;
@@ -54,4 +52,39 @@
 	width: 100%;
 	text-align: center;
 	margin-top: 40px;
+}
+.footer-column {
+	flex: 1;
+	margin-bottom: 20px;
+	text-align: center; /* Centrează textul în cadrul coloanei */
+}
+
+.footer-column h4 {
+	font-size: 1.2em; /* Mărește ușor dimensiunea titlului */
+	margin-bottom: 10px; /* Adaugă spațiu între titlu și lista de linkuri */
+}
+
+.footer-list {
+	list-style-type: none;
+	padding: 0;
+	margin: 0; /* Elimină marginile implicite pentru a asigura o aliniere corectă */
+}
+
+.footer-list li {
+	margin-bottom: 8px; /* Adaugă spațiu între linkuri */
+}
+
+.footer-link {
+	color: white;
+	text-decoration: none;
+	font-size: 1.1em; /* Mărește ușor dimensiunea textului linkurilor */
+	display: inline-block;
+	transition: transform 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+	perspective: 1000px; /* Adaugă perspectivă pentru efectul 3D */
+}
+
+.footer-link:hover {
+	color: #007bff; /* Schimbă culoarea la albastru pe hover */
+	transform: translateY(-5px) rotateX(5deg) rotateY(5deg); /* Ridică și rotește ușor pentru efect 3D */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adaugă o umbră subtilă pentru profunzime */
 }
