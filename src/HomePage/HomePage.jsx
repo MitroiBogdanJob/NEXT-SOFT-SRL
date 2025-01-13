@@ -27,14 +27,27 @@ function HomePage() {
 						<Link to="/ContactForm" className="transparent-button">
 							Let’s start your first project together
 						</Link>
+
 						<br />
 						<br />
 					</div>
-					<img className="pcaps" src={pcaps} alt="pcaps" />
-					<img className="erpaps" src={erpaps} alt="erpaps" />
-					<img className="apiaps" src={apiaps} alt="apiaps" />
+					<div className="applications-container">
+						<span className="applications-text">Desktop Applications</span>
+						<img className="pcaps" src={pcaps} alt="pcaps" />
+						<img className="erpaps" src={erpaps} alt="erpaps" />
+						<img
+							className="apiaps"
+							src={apiaps}
+							alt="apiaps"
+							style={{ margin: "0", pading: "0", border: "0" }}
+						/>
+						<span className="applications-text">
+							<span className="web">Web</span>
+							<br />
+						</span>
+					</div>
 					<br />
-					<p style={{ color: "babyblue", fontSize: "22px" }}>
+					<p style={{ color: "rgb(29, 92, 168)", fontSize: "22px" }}>
 						Technology is our how. And people are our why!
 					</p>
 					<br />
@@ -46,7 +59,7 @@ function HomePage() {
 					We specialize in{" "}
 					<strong className="strong-font-normal">Desktop applications, </strong>
 					<strong className="strong-font-normal">
-						WEB applications, ERP systems
+						Web applications, Databases, ERP systems
 					</strong>
 					<strong className="strong-font-normal"> and APIs</strong>.<br />
 					We are committed to building long-term partnerships that evolve with

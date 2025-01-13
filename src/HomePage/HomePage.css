@@ -110,3 +110,44 @@ canvas {
 	border-color: #00bcd4;
 	transform: scale(1.05);
 }
+.applications-text {
+	font-family: "Source Code Pro", monospace;
+	color: white;
+
+	border-radius: 5px;
+	position: relative;
+	transition: all 0.3s ease;
+	background: transparent;
+	border: 2px solid transparent;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+	transform-style: preserve-3d;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.applications-text:hover {
+	transform: rotateY(10deg);
+	border-color: #00bcd4;
+	box-shadow: 0 0 10px rgba(0, 188, 212, 0.6), 0 0 15px rgba(156, 39, 176, 0.6);
+}
+
+.applications-text:active {
+	transform: rotateY(-10deg);
+}
+
+.applications-text:hover::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border-radius: 5px;
+	background: linear-gradient(90deg, #00bcd4, #9c27b0);
+	z-index: -1;
+	opacity: 0.2;
+}
+.menu-contain-text-left {
+	display: block; /* Schimbăm din flex în block pentru a lăsa imaginile să se alinieze vertical */
+	text-align: center; /* Textul rămâne centrat */
+}
