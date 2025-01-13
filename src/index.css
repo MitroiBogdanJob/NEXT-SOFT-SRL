@@ -8,6 +8,7 @@
 body {
 	margin: 0;
 	overflow: hidden; /* Pentru a elimina scroll-ul */
+	overflow-y: scroll;
 }
 
 code {
@@ -24,3 +25,5 @@ code {
 	text-align: center;
 	pointer-events: auto;
 }
+
+
