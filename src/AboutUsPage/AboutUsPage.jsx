@@ -37,9 +37,9 @@ function AboutUsPage() {
 				<br />
 				{/* Imaginile cu efecte */}
 				<div className="image-container">
-					<img src={img1} alt="Image 1" className="rounded-img" />
-					<img src={img3} alt="Image 3" className="rounded-img" />
-					<img src={img2} alt="Image 2" className="rounded-img" />
+					<img src="image1.jpg" alt="A sunset" />
+					<img src="image2.jpg" alt="A cat" />
+					<img src="image3.jpg" alt="A car" />
 				</div>
 				<br />
 				<br />

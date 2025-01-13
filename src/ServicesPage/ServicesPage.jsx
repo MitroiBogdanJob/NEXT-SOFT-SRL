@@ -91,7 +91,6 @@ const ServicesPage = () => {
 						<h3 className="service-title">{service.title}</h3>
 						<p className="service-description">{service.description}</p>
 						<a
-							href="#"
 							className="service-link"
 							onClick={() => handleReadMore(service.url)} // La click se va încarca pagina oficială în iframe
 						>
@@ -159,15 +158,3 @@ const ServicesPage = () => {
 };
 
 export default ServicesPage;
-
-// Stilul pentru animație binară
-const style = {
-	"@keyframes binaryAnim": {
-		"0%": {
-			backgroundPosition: "0 0",
-		},
-		"100%": {
-			backgroundPosition: "20px 20px",
-		},
-	},
-};
