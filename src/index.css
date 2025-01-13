@@ -30,8 +30,8 @@ code {
 	z-index: 1;
 	position: absolute;
 	top: 30px;
-	left: 0;
-	width: 100%;
+	left: 15%;
+	width: 70%;
 	text-align: center;
 	pointer-events: auto; /* Permite interacțiunea cu elementele din spate */
 }
