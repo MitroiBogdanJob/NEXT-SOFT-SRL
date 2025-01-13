@@ -7,24 +7,22 @@ import webApp from "../ImageSlider/ImagesForSlider-AboutUsPage/webApp.PNG";
 import apiApp from "../ImageSlider/ImagesForSlider-AboutUsPage/apiApp.PNG";
 import erpApp from "../ImageSlider/ImagesForSlider-AboutUsPage/erpApp2.PNG";
 
-import img1 from "./Images-AboutUsPage/img1.png";
-import img2 from "./Images-AboutUsPage/img2.jpg";
-import img3 from "./Images-AboutUsPage/img3.png";
+import csds from "./Images-AboutUsPage/csds.png";
+import support from "./Images-AboutUsPage/support.jpg";
+import csdevelopment from "./Images-AboutUsPage/csdevelopment.png";
 
 const sliderImages = [apiApp, webApp, erpApp, desktopApp];
 
 function AboutUsPage() {
 	return (
 		<>
-			<h6 style={{ fontSize: "48px" }}>About Us</h6>
+			<h6>About Us</h6>
 			<br />
 			<br />
 			<div className="Who-We-Are">Who We Are?</div>
-			<br />
 			<div className="aboutU-first">
 				-We transform lives through technology-
 			</div>
-
 			<br />
 			<br />
 			<ImageSlider images={sliderImages} />
@@ -37,9 +35,13 @@ function AboutUsPage() {
 				<br />
 				{/* Imaginile cu efecte */}
 				<div className="image-container">
-					<img src="image1.jpg" alt="A sunset" />
-					<img src="image2.jpg" alt="A cat" />
-					<img src="image3.jpg" alt="A car" />
+					<img src={csds} alt="csds image" className="rounded-img" />
+					<img
+						src={csdevelopment}
+						alt="csdevelopment Image"
+						className="rounded-img"
+					/>
+					<img src={support} alt="Image support" className="rounded-img" />
 				</div>
 				<br />
 				<br />

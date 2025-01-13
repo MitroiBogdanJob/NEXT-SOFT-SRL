@@ -91,6 +91,7 @@ const ServicesPage = () => {
 						<h3 className="service-title">{service.title}</h3>
 						<p className="service-description">{service.description}</p>
 						<a
+							href="https://example.com"
 							className="service-link"
 							onClick={() => handleReadMore(service.url)} // La click se va încarca pagina oficială în iframe
 						>
