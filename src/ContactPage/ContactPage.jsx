@@ -38,14 +38,6 @@ const ContactPage = () => {
 						Saturday - Sunday: Closed
 					</p>
 					<br />
-
-					{/* Descriere suplimentară sau suport */}
-					<p>
-						<strong>Need help?</strong> <br /> Feel free to reach out to us for
-						any inquiries, questions, or support requests. We're here to assist
-						you with anything you need.
-					</p>
-					<br />
 					<br />
 					{/* Linkuri sociale */}
 					<p className="social-links">
