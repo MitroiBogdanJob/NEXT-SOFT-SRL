@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";  // Importă Link din react-router-dom
 import "./ServicesPage.css";
 
 import database from "./Images-ServicesPage/database.jpg";
@@ -78,7 +79,7 @@ const ServicesPage = () => {
 				<img
 					className="beautiful"
 					src={database}
-					alt="Database solutions"
+					alt="Database solutions for business management"
 					style={{ width: "78%", height: "auto" }}
 				/>
 				<br />
@@ -91,9 +92,9 @@ const ServicesPage = () => {
 						<h3 className="service-title">{service.title}</h3>
 						<p className="service-description">{service.description}</p>
 						<a
-							href="https://example.com"
+							href={service.url} // Folosește URL-ul din obiectul service
 							className="service-link"
-							onClick={() => handleReadMore(service.url)} // La click se va încarca pagina oficială în iframe
+							onClick={() => handleReadMore(service.url)} // La click se va încărca pagina oficială în iframe
 						>
 							{service.linkText} →
 						</a>
@@ -135,6 +136,14 @@ const ServicesPage = () => {
 				today, and prepare you for what’s next.
 			</div>
 
+			<p className="text-large homepage-text-large_homepage-text-lg__24_gZ">
+				{/* Link-ul stilizat ca buton */}
+				<Link to="/ContactForm" className="transparent-button">
+					Let’s start your first project together
+				</Link>
+			</p>
+			<br />
+			<br />
 			{/* Adăugarea efectului subtil cu 0 și 1 pe lateralele textului */}
 			<div
 				className="binary-background"
