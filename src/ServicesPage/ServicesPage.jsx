@@ -60,14 +60,14 @@ const ServicesPage = () => {
 				}}
 			>
 				<div className="first-text" style={{ textIndent: "20px" }}>
-					&nbsp;Custom desktop applications, web applications, databases, and
-					APIs are at the heart of what we do at NEXT SOFT. Our team specializes
-					in developing high-performance enterprise software, including ERP
-					systems and scalable digital products, all designed to improve
-					usability and efficiency. By focusing on intuitive design, responsive
-					functionality, and seamless integration across platforms, we deliver
-					impactful solutions that refine user experience, increase operational
-					capacity, and support your business growth globally.
+					Custom desktop applications, web applications, databases, and APIs are
+					at the heart of what we do at NEXT SOFT. Our team specializes in
+					developing high-performance enterprise software, including ERP systems
+					and scalable digital products, all designed to improve usability and
+					efficiency. By focusing on intuitive design, responsive functionality,
+					and seamless integration across platforms, we deliver impactful
+					solutions that refine user experience, increase operational capacity,
+					and support your business growth globally.
 				</div>
 			</div>
 
