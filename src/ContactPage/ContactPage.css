@@ -9,10 +9,8 @@
 /* Fundal cu opacitate redusă */
 .background-overlay {
 	position: absolute;
-	top: 0;
-	left: 0;
 	width: 100%;
-	height: 50%;
+	height: 70%;
 	background-image: url("./ImageBehindContactUS/contactUsImg.jpg"); /* Imaginea de fundal */
 	background-size: cover; /* Acoperă complet containerul */
 	background-position: center center; /* Centrează imaginea */
@@ -21,7 +19,7 @@
 	z-index: 1; /* Trimite stratul în spate */
 	border-radius: 12%;
 	margin-top: 0;
-	padding-top: 0;
+	padding-top: 10;
 	border: 0;
 }
 
@@ -32,6 +30,7 @@
 	padding: 0px;
 	color: #ffffff; /* Text alb */
 	text-align: center;
+	padding-top: 50px;
 }
 
 /* Titlu */

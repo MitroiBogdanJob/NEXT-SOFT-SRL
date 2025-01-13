@@ -10,19 +10,24 @@ import ServicesPage from "./ServicesPage/ServicesPage";
 import ContactForm from "./ContactForm/ContactForm";
 
 function App() {
-	return (
-		<Router>
-			<Header />
-			<Routes>
-				<Route path="/" element={<HomePage />} />
-				<Route path="/ContactForm" element={<ContactForm />} />
-				<Route path="/AboutUs" element={<AboutUsPage />} />
-				<Route path="/ContactUs" element={<ContactPage />} />
-				<Route path="/Services" element={<ServicesPage />} />
-			</Routes>
-			<Footer />
-		</Router>
-	);
+  return (
+    <Router>
+      <div id="background-wrapper">
+        <div id="background"></div> {/* Fundalul interactiv */}
+      </div>
+      <div id="root"> {/* Containerul principal pentru pagină */}
+        <Header />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/ContactForm" element={<ContactForm />} />
+          <Route path="/AboutUs" element={<AboutUsPage />} />
+          <Route path="/ContactUs" element={<ContactPage />} />
+          <Route path="/Services" element={<ServicesPage />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
+  );
 }
 
 export default App;
