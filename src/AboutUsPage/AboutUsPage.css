@@ -2,6 +2,7 @@
 	color: rgb(33, 118, 183);
 	font-size: 40px;
 }
+
 .aboutU-first {
 	color: rgb(106, 0, 255);
 	font-size: 16px;
@@ -11,4 +12,78 @@
 	width: 100%;
 	height: auto;
 	opacity: 0.8;
+}
+
+.image-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 40px; /* Distanță între imagini */
+	margin-top: 20px;
+}
+
+.rounded-img {
+	width: 275px; /* Dimensiune fixă a imaginii */
+	height: auto;
+	border-radius: 20px; /* Colțuri rotunjite */
+	transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efecte de tranziție pentru zoom și umbră */
+}
+
+.rounded-img:hover {
+	transform: scale(1.1); /* Efect de zoom */
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Efect de umbră pentru a da impresia de „pop” */
+}
+/* Stilizare generală pentru secțiunea de valori */
+.values-section {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
+	margin: 40px auto;
+	max-width: 1200px;
+}
+/* Stiluri generale */
+.values-section {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-top: 20px;
+}
+
+.value-item {
+	width: 18%;
+	text-align: center;
+	color: white;
+}
+
+.value-icon {
+	margin-bottom: 15px;
+}
+
+/* Stiluri pentru grupul de buline */
+.dot-group {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 5px;
+}
+
+/* Stiluri pentru buline */
+.dot {
+	background-color: #8e44ad; /* Mov */
+	border-radius: 50%;
+}
+
+.large {
+	width: 20px;
+	height: 20px;
+}
+
+.medium {
+	width: 14px;
+	height: 14px;
+}
+
+.small {
+	width: 8px;
+	height: 8px;
 }
