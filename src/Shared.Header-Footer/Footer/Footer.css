@@ -12,11 +12,11 @@
 
 /* Footer */
 .footer {
-	opacity: 0.5;
+	borede-top: 10px;
 	display: flex;
 	flex-direction: column;
 	width: 100%;
-	margin: 30px;
+	margin: 30px auto; /* Centrare orizontală */
 	opacity: 0.6;
 	background-color: #333;
 	color: white;
@@ -25,16 +25,22 @@
 	align-items: center;
 }
 
+.footer {
+	box-sizing: border-box;
+	margin: 0 auto; /* Centrare orizontală */
+	padding: 20px; /* Padding uniform */
+	border-radius: 80px; /* Colțuri rotunjite uniforme */
+	max-width: 3150px; /* Lățime maximă pentru a evita extinderea excesivă pe ecrane mari */
+}
+
 .footer-content {
-	max-width: 1200px;
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+	flex-direction: column;
 	align-items: center;
+	text-align: center;
 }
 
 .footer-column {
-	flex: 1;
 	margin-bottom: 20px;
 }
 
