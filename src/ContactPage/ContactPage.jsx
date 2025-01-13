@@ -8,11 +8,12 @@ const ContactPage = () => {
 	const address = "Ramnicu Valcea, Valcea, Strada Morilor 97";
 
 	return (
-		<div className="contact-container">
+		<div className="contact-container" >
 			{/* Adaugă un strat pentru imagine */}
 			<div className="background-overlay"></div>
 			<div className="contact-content">
-				<h6>Contact Us</h6>
+				<h6 >Contact Us</h6>
+
 				<div className="contact-info">
 					<p className="p-contact">
 						<strong>Company: </strong> {companyName}
