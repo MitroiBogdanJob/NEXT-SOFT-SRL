@@ -35,13 +35,13 @@ function AboutUsPage() {
 				<br />
 				{/* Imaginile cu efecte */}
 				<div className="image-container">
-					<img src={csds} alt="csds " className="rounded-img" />
+					<img src={csds} alt="csdsoft " className="rounded-img" />
 					<img
 						src={csdevelopment}
 						alt="csdevelopment "
 						className="rounded-img"
 					/>
-					<img src={support} alt=" support" className="rounded-img" />
+					<img src={support} alt=" support" className="rounded-" />
 				</div>
 				<br />
 				<br />
