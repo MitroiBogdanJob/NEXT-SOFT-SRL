@@ -34,7 +34,9 @@ function HomePage() {
 					<img className="erpaps" src={erpaps} alt="erpaps" />
 					<img className="apiaps" src={apiaps} alt="apiaps" />
 					<br />
-					Technology is our how. And people are our why!
+					<p style={{ color: "babyblue", fontSize: "22px" }}>
+						Technology is our how. And people are our why!
+					</p>
 					<br />
 					<br />
 					At <strong className="strong-font-normal highlight">NEXT SOFT</strong>
