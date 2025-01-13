@@ -88,3 +88,31 @@
 	width: 8px;
 	height: 8px;
 }
+.aboutU-first {
+	font-size: 16.8px; /* Dimensiune text mai mică */
+	font-weight: normal; /* Text normal, nu îngroșat */
+	text-align: center; /* Centrare pe orizontală */
+	color: transparent; /* Text transparent pentru a aplica gradientul */
+	background: linear-gradient(
+		to right,
+		purple,
+		blue
+	); /* Gradient de la mov la albastru */
+	-webkit-background-clip: text; /* Aplică gradientul doar pe text */
+	animation: rotateText 10s infinite; /* Durata animației mai lungă pentru o mișcare mai lentă */
+	letter-spacing: 1px; /* Spațiere între litere */
+	text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); /* Adăugăm umbră textului pentru un efect mai puternic */
+	transform: rotate(-2deg); /* Rotește textul mai puțin */
+}
+
+@keyframes rotateText {
+	0% {
+		transform: rotate(-2deg); /* Poziția inițială cu un unghi mai mic */
+	}
+	50% {
+		transform: rotate(2deg); /* Poziția intermediară cu un unghi mai mic */
+	}
+	100% {
+		transform: rotate(-2deg); /* Revine la poziția inițială */
+	}
+}

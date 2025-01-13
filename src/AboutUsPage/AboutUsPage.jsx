@@ -20,9 +20,11 @@ function AboutUsPage() {
 			<br />
 			<br />
 			<div className="Who-We-Are">Who We Are?</div>
+			<br />
 			<div className="aboutU-first">
 				-We transform lives through technology-
 			</div>
+
 			<br />
 			<br />
 			<ImageSlider images={sliderImages} />
