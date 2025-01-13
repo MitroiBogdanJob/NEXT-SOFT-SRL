@@ -50,7 +50,6 @@ const ServicesPage = () => {
 
 	return (
 		<>
-			{" "}
 			<h6 style={{ fontSize: "48px" }}>Services</h6>
 			<div className="first-text">
 				Custom desktop applications, web applications, databases, and APIs are
@@ -102,13 +101,63 @@ const ServicesPage = () => {
 					></iframe>
 				</div>
 			)}
-			<div className="first-text">
+			<br />
+			<br />
+			<br />
+			{/* Secțiunea cu textul în două culori și fundalul cu 0 și 1 */}
+			<div
+				className="first-text"
+				style={{
+					position: "relative", // pentru a putea poziționa elementele suplimentare
+					fontSize: "26px", // dimensiunea textului
+					fontWeight: "normal", // text normal
+					lineHeight: "1.8", // linii mai distantate pentru o citire mai ușoară
+					letterSpacing: "0.5px", // un pic de spațiu între litere pentru a îmbunătăți lizibilitatea
+					textAlign: "center", // aliniere centrală pentru un aspect mai echilibrat
+					background: "linear-gradient(to right, purple, blue)", // gradient pe text
+					WebkitBackgroundClip: "text", // aplicarea gradientului pe text
+					color: "transparent", // face textul transparent pentru a vedea gradientul
+					zIndex: "1", // asigură că textul este deasupra
+				}}
+			>
 				Move your industry forward, our sector-specific knowledge allows us to
-				build solutions that accommodate what’s happening in your industry today
-				– and prepare you for what’s next.
+				build solutions that accommodate what’s happening in your industry
+				today, and prepare you for what’s next.
 			</div>
+
+			{/* Adăugarea efectului subtil cu 0 și 1 pe lateralele textului */}
+			<div
+				className="binary-background"
+				style={{
+					position: "absolute",
+					top: "0",
+					left: "0",
+					right: "0",
+					bottom: "0",
+					zIndex: "-1", // face ca fundalul să fie în spatele textului
+					background:
+						"linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1))",
+					backgroundSize: "20px 20px", // dimensiunea pătratelor pentru efectul binar
+					backgroundPosition: "0 0",
+					animation: "binaryAnim 3s infinite",
+					width: "100%",
+					height: "100%",
+				}}
+			></div>
 		</>
 	);
 };
 
 export default ServicesPage;
+
+// Stilul pentru animație binară
+const style = {
+	"@keyframes binaryAnim": {
+		"0%": {
+			backgroundPosition: "0 0",
+		},
+		"100%": {
+			backgroundPosition: "20px 20px",
+		},
+	},
+};
