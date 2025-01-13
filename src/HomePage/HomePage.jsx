@@ -32,18 +32,21 @@ function HomePage() {
 						<br />
 					</div>
 					<div className="applications-container">
+						{/* Acesta este un comentariu în JSX */}
 						<span className="applications-text">Desktop Applications</span>
 						<img className="pcaps" src={pcaps} alt="pcaps" />
 						<img className="erpaps" src={erpaps} alt="erpaps" />
+						<div className="applications-container">
+							<div className="website-container"></div>
+						</div>
 						<img
 							className="apiaps"
 							src={apiaps}
 							alt="apiaps"
 							style={{ margin: "0", pading: "0", border: "0" }}
-						/>
+						/>{" "}
 						<span className="applications-text">
-							<span className="web">Web</span>
-							<br />
+							<span className="web">WebSites</span>
 						</span>
 					</div>
 					<br />
