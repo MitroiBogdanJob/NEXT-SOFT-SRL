@@ -1,9 +1,4 @@
 /* Asigură-te că body ocupă întreaga înălțime a paginii */
-html,
-body {
-	height: 100%;
-	margin: 0;
-}
 
 /* Containerul principal pentru pagină */
 .page-container {
@@ -14,24 +9,30 @@ body {
 
 /* Conținutul principal al paginii */
 .main-content {
-	flex: 1; /* Se va extinde pentru a ocupa tot spațiul disponibil */
+	flex-grow: 1; /* Se va extinde pentru a ocupa tot spațiul disponibil, împingând footer-ul la bază */
 }
 
 /* Footer */
 .footer {
+	opacity: 0.5;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin: 30px;
+	opacity: 0.6;
 	background-color: #333;
 	color: white;
-	padding: 40px 0;
-	/* Poți adăuga orice alte stiluri pentru footer aici */
+	padding: 20px 15px 10px 5px; /* 20px sus, 15px dreapta, 10px jos, 5px stânga */
+	border-radius: 50px;
+	align-items: center;
 }
 
 .footer-content {
 	max-width: 1200px;
-	margin: 0 auto;
-	padding: 0 20px;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: center;
+	align-items: center;
 }
 
 .footer-column {
