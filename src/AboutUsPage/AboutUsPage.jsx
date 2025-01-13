@@ -43,6 +43,7 @@ function AboutUsPage() {
 					/>
 					<img src={support} alt=" support" className="rounded-img" />
 				</div>
+				
 				<br />
 				<br />
 				We are committed to making a positive impact on our people, customers,
