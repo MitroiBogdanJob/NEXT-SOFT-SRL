@@ -1,45 +1,56 @@
-/* Container scrollabil pentru pagina AboutUs */
-.aboutUs-scroll-container {
-	max-height: 80vh; /* Înălțime maximă relativă la vizor */
-	overflow-y: auto; /* Scroll bar vertical */
-	padding: 20px;
-	background-color: #f9f9f9; /* Fundal deschis */
-	border: 1px solid #ddd; /* Bordură pentru delimitare */
-	border-radius: 8px;
-	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Umbră pentru efect de adâncire */
-}
-
-/* Scroll bar personalizat */
-.aboutUs-scroll-container::-webkit-scrollbar {
-	width: 10px; /* Lățimea scroll bar-ului */
-}
-
-.aboutUs-scroll-container::-webkit-scrollbar-track {
-	background: #f1f1f1; /* Fundalul pistei scroll bar-ului */
-}
-
-.aboutUs-scroll-container::-webkit-scrollbar-thumb {
-	background: #888; /* Thumb-ul scroll bar-ului */
-	border-radius: 10px; /* Colțuri rotunjite */
-}
-
-.aboutUs-scroll-container::-webkit-scrollbar-thumb:hover {
-	background: #555; /* Thumb-ul la hover */
-}
-
-/* Alte stiluri existente */
-.Who-We-Are {
-	color: rgb(33, 118, 183);
-	font-size: 40px;
-}
-
-.aboutU-first {
-	color: rgb(106, 0, 255);
-	font-size: 16.7px;
-}
-
-.aboutU {
+/* Container principal */
+.contact-container {
+	position: relative;
 	width: 100%;
-	height: auto;
-	opacity: 0.8;
+	height: 100vh; /* Asigură că secțiunea ocupă întreaga înălțime a paginii */
+	overflow: hidden; /* Ascunde conținutul care iese în afară */
+}
+
+/* Fundal cu opacitate redusă */
+.background-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 55%;
+	background-image: url("./ImageBehindContactUS/contactUsImg.jpg"); /* Imaginea de fundal */
+	background-size: cover; /* Acoperă complet containerul */
+	background-position: center center; /* Centrează imaginea */
+	background-repeat: no-repeat; /* Fără repetare */
+	opacity: 0.5; /* Fundal semi-transparent */
+	z-index: 1; /* Trimite stratul în spate */
+	border-radius: 10%;
+}
+
+/* Conținutul textului */
+.contact-content {
+	position: relative;
+	z-index: 2; /* Asigură că textul apare deasupra imaginii */
+	padding: 30px;
+	color: #ffffff; /* Text alb */
+	text-align: center;
+}
+
+/* Titlu */
+.contact-content h6 {
+	font-size: 2rem;
+	margin-bottom: 20px;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Umbră pentru lizibilitate */
+}
+
+/* Informațiile de contact */
+.contact-info {
+	font-size: 1.2rem;
+	line-height: 1.8;
+}
+
+/* Stiluri pentru linkuri */
+.contact-info a {
+	color: #ffffff; /* Linkuri albe */
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.contact-info a:hover {
+	color: #0004ff; /* Culoare evidențiată la hover */
 }
