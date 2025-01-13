@@ -34,6 +34,9 @@ function HomePage() {
 					<img className="erpaps" src={erpaps} alt="erpaps" />
 					<img className="apiaps" src={apiaps} alt="apiaps" />
 					<br />
+					Technology is our how. And people are our why!
+					<br />
+					<br />
 					At <strong className="strong-font-normal highlight">NEXT SOFT</strong>
 					, we bring your ideas to life through expert development and design
 					services.
@@ -53,6 +56,13 @@ function HomePage() {
 					that drive your{" "}
 					<strong className="strong-font-normal">business growth</strong>{" "}
 					globally.
+					<br />
+					<br />
+					We have been harnessing technology to drive meaningful change.
+					Combining world-class engineering, industry expertise and a
+					people-centric mindset, we consult and partner with our customers to
+					create technological solutions that drive innovation and transform
+					businesses.
 				</p>
 			</div>
 		</>
