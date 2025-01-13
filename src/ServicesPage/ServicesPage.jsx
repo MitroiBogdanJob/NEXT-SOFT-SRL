@@ -51,16 +51,26 @@ const ServicesPage = () => {
 	return (
 		<>
 			<h6 style={{ fontSize: "48px" }}>Services</h6>
-			<div className="first-text">
-				Custom desktop applications, web applications, databases, and APIs are
-				at the heart of what we do at NEXT SOFT. Our team specializes in
-				developing high-performance enterprise software, including ERP systems
-				and scalable digital products, all designed to improve usability and
-				efficiency. By focusing on intuitive design, responsive functionality,
-				and seamless integration across platforms, we deliver impactful
-				solutions that refine user experience, increase operational capacity,
-				and support your business growth globally.
+			<div
+				className="first-text"
+				style={{
+					display: "flex",
+					justifyContent: "space-between",
+					paddingLeft: "20px",
+				}}
+			>
+				<div className="first-text" style={{ textIndent: "20px" }}>
+					&nbsp;Custom desktop applications, web applications, databases, and
+					APIs are at the heart of what we do at NEXT SOFT. Our team specializes
+					in developing high-performance enterprise software, including ERP
+					systems and scalable digital products, all designed to improve
+					usability and efficiency. By focusing on intuitive design, responsive
+					functionality, and seamless integration across platforms, we deliver
+					impactful solutions that refine user experience, increase operational
+					capacity, and support your business growth globally.
+				</div>
 			</div>
+
 			<br />
 			<br />
 			<br />
