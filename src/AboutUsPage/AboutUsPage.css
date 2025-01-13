@@ -47,6 +47,7 @@
 	justify-content: space-between;
 	flex-wrap: wrap;
 	margin-top: 20px;
+	font-size: 17.5px;
 }
 
 .value-item {
