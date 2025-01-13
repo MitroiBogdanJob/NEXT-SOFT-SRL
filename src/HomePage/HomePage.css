@@ -1,5 +1,4 @@
 /* Stilurile existente pentru text și layout */
-
 .homepage-text-large_homepage-text-lg__24_gZ {
 	color: rgb(250, 250, 250);
 	text-align: center;
@@ -110,10 +109,10 @@ canvas {
 	border-color: #00bcd4;
 	transform: scale(1.05);
 }
+
 .applications-text {
 	font-family: "Source Code Pro", monospace;
 	color: white;
-
 	border-radius: 5px;
 	position: relative;
 	transition: all 0.3s ease;
@@ -147,6 +146,7 @@ canvas {
 	z-index: -1;
 	opacity: 0.2;
 }
+
 .menu-contain-text-left {
 	display: block; /* Schimbăm din flex în block pentru a lăsa imaginile să se alinieze vertical */
 	text-align: center; /* Textul rămâne centrat */
@@ -156,6 +156,7 @@ canvas {
 	position: static;
 	display: inline-block;
 }
+
 .applications-text:hover {
 	transform: translate(-50%, -50%) rotateY(10deg);
 	border-color: #00bcd4;
@@ -177,4 +178,51 @@ canvas {
 	background: linear-gradient(90deg, #00bcd4, #9c27b0);
 	z-index: -1;
 	opacity: 0.2;
+}
+
+/* Media Queries pentru mobil */
+@media (max-width: 768px) {
+	/* Ajustăm font-size și marginile pentru text pe mobil */
+	.homepage-text-large_homepage-text-lg__24_gZ,
+	.first-text {
+		font-size: 1.1rem; /* Reducem fontul pentru a fi mai citibil pe mobil */
+		line-height: 1.6rem;
+		max-width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	/* Ajustăm dimensiunea imaginilor */
+	.img1 {
+		width: 80px;
+		height: 80px;
+	}
+
+	/* Ajustăm canvas-ul pentru a fi mai mic pe mobil */
+	canvas {
+		height: 300px; /* Micșorăm înălțimea canvas-ului pe mobil */
+	}
+
+	/* Stiluri pentru butoane și text */
+	.transparent-button {
+		font-size: 1rem;
+		padding: 8px 16px;
+	}
+
+	.applications-text {
+		font-size: 1rem;
+		padding: 12px 24px;
+	}
+
+	/* Ajustăm sferele interactive pe mobil */
+	.sphere img {
+		width: 120px;
+		height: 120px;
+	}
+
+	/* Ajustăm dimensiunea fundalului pentru sfere */
+	.sphere-background {
+		width: 80px;
+		height: 80px;
+	}
 }

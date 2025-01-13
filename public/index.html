@@ -3,76 +3,43 @@
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <!-- Meta tag pentru responsive design pe mobil -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
+    <meta name="description" content="Web site created using create-react-app" />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
+    <!-- Manifest pentru aplicațiile mobile -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
     <title>React App</title>
-     <link rel="stylesheet" href="particles/css/style.css" />
-    
+    <!-- Adăugarea fișierului de stiluri pentru particles.js -->
+    <link rel="stylesheet" href="particles/css/style.css" />
   </head>
   <body>
-
     <div id="on-each-page" class="!h-0 !w-0 !overflow-hidden">
       <div class="background-gradient_main-container__Z3ZLQ background-gradient_visible__MMKDU">
         <div class="background-gradient_bottom-container__3I3vA">
           <svg width="100%" height="50%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <defs><linearGradient id="svg-bg-gradient-bottom" gradientTransform="rotate(0)">
-              <stop offset="20%" stop-color="#200220" stop-opacity="1" data-darkreader-inline-stopcolor="" 
-              style="--darkreader-inline-stopcolor: #74b12a;">
-            </stop><stop offset="36%" stop-color="#3f9cb5" stop-opacity="1" data-darkreader-inline-stopcolor=""
-             style="--darkreader-inline-stopcolor: #3f9cb5;">
-            </stop><stop offset="52%" stop-color="#F26ED6" stop-opacity="1" data-darkreader-inline-stopcolor=""
-             style="--darkreader-inline-stopcolor: #e2c317;">
-            </stop><stop offset="68%" stop-color="#AF58EE" stop-opacity="1"
-             data-darkreader-inline-stopcolor="" style="--darkreader-inline-stopcolor:
-              #008c87;"></stop><stop offset="84%" stop-color="#7E17CA" stop-opacity="1" 
-              data-darkreader-inline-stopcolor="" style="--darkreader-inline-stopcolor: 
-              #017f9e;"></stop><stop offset="100%"
-               stop-color="#4F00F9" stop-opacity="1" 
-               data-darkreader-inline-stopcolor="" style="--darkreader-inline-stopcolor:
-                #1ac600;"></stop></linearGradient></defs><circle r="100%" cx="50%" cy="50%" 
-                fill="url(#svg-bg-gradient-bottom)"></circle></svg></div></div></div>
-    
-    
-    
+            <defs>
+              <linearGradient id="svg-bg-gradient-bottom" gradientTransform="rotate(0)">
+                <stop offset="20%" stop-color="#200220" stop-opacity="1"></stop>
+                <stop offset="36%" stop-color="#3f9cb5" stop-opacity="1"></stop>
+                <stop offset="52%" stop-color="#F26ED6" stop-opacity="1"></stop>
+                <stop offset="68%" stop-color="#AF58EE" stop-opacity="1"></stop>
+                <stop offset="84%" stop-color="#7E17CA" stop-opacity="1"></stop>
+                <stop offset="100%" stop-color="#4F00F9" stop-opacity="1"></stop>
+              </linearGradient>
+            </defs>
+            <circle r="100%" cx="50%" cy="50%" fill="url(#svg-bg-gradient-bottom)"></circle>
+          </svg>
+        </div>
+      </div>
+    </div>
+
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build steSp will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-
-    
-    <!-- particles.js container -->
+    <!-- Containerul pentru particles.js -->
     <div id="particles-js"></div>
     <script src="particles/particles.min.js"></script>
     <script src="particles/js/app.js"></script>
-
-   
   </body>
-
-  
 </html>
