@@ -12,7 +12,7 @@ const ContactPage = () => {
 			{/* Adaugă un strat pentru imagine */}
 			<div className="background-overlay"></div>
 			<div className="contact-content">
-				<h6 style={{ fontSize: "50px" }}>Contact Us</h6>
+				<h6 style={{ fontSize: "48px" }}>Contact Us</h6>
 
 				<div className="contact-info">
 					<p className="p-contact">
@@ -38,18 +38,18 @@ const ContactPage = () => {
 						Saturday - Sunday: Closed
 					</p>
 					<br />
-					<br />
 
 					{/* Descriere suplimentară sau suport */}
 					<p>
-						<strong>Need help?</strong> Feel free to reach out to us for any
-						inquiries, questions, or support requests. We're here to assist you
-						with anything you need.
+						<strong>Need help?</strong> <br /> Feel free to reach out to us for
+						any inquiries, questions, or support requests. We're here to assist
+						you with anything you need.
 					</p>
-
+					<br />
+					<br />
 					{/* Linkuri sociale */}
-					<p>
-						<strong>Follow Us: </strong>
+					<p className="social-links">
+						<strong>Follow Us:</strong>
 						<br />
 						<a
 							href="https://www.facebook.com"
@@ -57,15 +57,30 @@ const ContactPage = () => {
 							rel="noopener noreferrer"
 						>
 							Facebook
-						</a>{" "}
-						|
+						</a>
+						<span> | </span>
 						<a
 							href="https://www.linkedin.com"
 							target="_blank"
 							rel="noopener noreferrer"
 						>
-							{" "}
 							LinkedIn
+						</a>
+						<span> | </span>
+						<a
+							href="https://www.instagram.com"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							Instagram
+						</a>
+						<span> | </span>
+						<a
+							href="https://www.tiktok.com"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							TikTok
 						</a>
 					</p>
 				</div>
