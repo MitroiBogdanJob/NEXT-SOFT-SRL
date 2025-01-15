@@ -34,6 +34,7 @@ h6 {
 	gap: 1px; /* Spațiu între câmpuri */
 	align-items: center; /* Centrează câmpurile */
 	padding: 20px;
+	color: white;
 }
 
 label {
