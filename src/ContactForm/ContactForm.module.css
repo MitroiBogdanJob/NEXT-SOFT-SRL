@@ -61,6 +61,7 @@ input[type="radio"] {
 	gap: 15px; /* Spațiu între opțiuni */
 	justify-content: center;
 	flex-wrap: wrap; /* Permite mutarea pe mai multe linii */
+	color: blue;
 }
 
 .radioOption {
