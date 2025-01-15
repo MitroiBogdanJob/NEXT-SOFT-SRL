@@ -37,7 +37,7 @@ function ContactForm() {
 		try {
 			// Trimite datele la API-ul C#
 			const response = await fetch(
-				"https://nextsoftsrl-backend.azurewebsites.net/swagger/index.html",
+				"https://nextsoftsrl-backend.azurewebsites.net/api/ContactForm/send-email",
 				{
 					method: "POST",
 					headers: {
