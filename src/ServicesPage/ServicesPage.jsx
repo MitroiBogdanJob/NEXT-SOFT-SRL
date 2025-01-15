@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";  // Importă Link din react-router-dom
+import { Link } from "react-router-dom"; // Importă Link din react-router-dom
 import "./ServicesPage.css";
 
 import database from "./Images-ServicesPage/database.jpg";
@@ -10,42 +10,43 @@ const servicesData = [
 		description:
 			"Robust desktop applications tailored to your business needs, providing high performance, scalability, and seamless integration with other systems, developed using C# and .NET technologies.",
 		linkText: "Learn more about Desktop Applications",
-		url: "https://officialpage.com/desktop-applications",
+		url: "https://en.wikipedia.org/wiki/https://www.walkme.com/glossary/desktop-application/",
 	},
 	{
 		title: "Web Applications",
 		description:
 			"Custom web applications designed for responsiveness, scalability, and user-friendly interfaces, ensuring seamless experiences across devices. Built with C#, ASP.NET Core, and modern front-end.",
 		linkText: "Learn more about Web Applications",
-		url: "https://officialpage.com/web-applications",
+		url: "https://en.wikipedia.org/wiki/Web_application",
 	},
 	{
 		title: "Databases",
 		description:
 			"Efficient and secure database solutions using Microsoft SQL Server, designed to store, manage, and retrieve your data with ease, supporting your business operations.",
 		linkText: "Learn more about Databases",
-		url: "https://officialpage.com/databases",
+		url: "https://en.wikipedia.org/wiki/Database",
 	},
 	{
 		title: "ERP Systems",
 		description:
 			"Integrated ERP systems built with C# and Microsoft SQL Server that streamline your core business processes, improve decision-making, and enhance overall efficiency.",
 		linkText: "Learn more about ERP Systems",
-		url: "https://officialpage.com/erp-systems",
+		url: "https://en.wikipedia.org/wiki/Enterprise_resource_planning",
 	},
 	{
 		title: "APIs",
 		description:
 			"Custom API development using C# and ASP.NET Core to enable seamless communication between your systems and third-party applications, ensuring smooth data flow.",
 		linkText: "Learn more about APIs",
-		url: "https://officialpage.com/apis",
+		url: "https://en.wikipedia.org/wiki/API",
 	},
 ];
 
 const ServicesPage = () => {
 	const [iframeUrl, setIframeUrl] = useState("");
 
-	const handleReadMore = (url) => {
+	const handleReadMore = (e, url) => {
+		e.preventDefault(); // Previne deschiderea link-ului într-o filă nouă
 		setIframeUrl(url); // Setează URL-ul în iframe
 	};
 
@@ -94,7 +95,8 @@ const ServicesPage = () => {
 						<a
 							href={service.url} // Folosește URL-ul din obiectul service
 							className="service-link"
-							onClick={() => handleReadMore(service.url)} // La click se va încărca pagina oficială în iframe
+							rel="noopener noreferrer" // Adaugă rel pentru securitate
+							onClick={(e) => handleReadMore(e, service.url)} // La click se va încărca pagina oficială în iframe
 						>
 							{service.linkText} →
 						</a>
