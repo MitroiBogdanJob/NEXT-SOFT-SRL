@@ -5,7 +5,6 @@ const ContactPage = () => {
 	const companyName = "Next Soft Srl";
 	const email = "nextsoftsrl@outlook.com";
 	const phoneNumber = "0758498244";
-	const address = "Ramnicu Valcea, Valcea, Strada Posada 46";
 
 	return (
 		<div className="contact-container">
@@ -26,7 +25,7 @@ const ContactPage = () => {
 						<a href={`tel:${phoneNumber}`}>{phoneNumber}</a>
 					</p>
 					<p>
-						<strong>Address: </strong> {address}
+						<br />
 					</p>
 
 					{/* Programul de lucru */}
