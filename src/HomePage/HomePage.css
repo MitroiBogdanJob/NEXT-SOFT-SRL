@@ -153,8 +153,18 @@ canvas {
 }
 
 .applications-container {
-	position: static;
-	display: inline-block;
+	display: flex;
+	flex-wrap: wrap; /* Permite imaginilor să treacă pe un rând nou dacă spațiul nu este suficient */
+	justify-content: center; /* Aliniază imaginile în centru */
+	align-items: center; /* Aliniază imaginile vertical */
+	gap: 20px; /* Spațiu între imagini */
+}
+
+.pcaps,
+.erpaps {
+	width: 150px; /* Ajustează dimensiunea imaginilor */
+	height: auto;
+	margin: 10px; /* Adaugă spațiu exterior */
 }
 
 .applications-text:hover {
@@ -225,5 +235,4 @@ canvas {
 		width: 80px;
 		height: 80px;
 	}
-	
 }

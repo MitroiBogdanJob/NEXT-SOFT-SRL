@@ -25,15 +25,14 @@ function HomePage() {
 					<div>
 						{/* Link-ul stilizat ca buton */}
 						<Link to="/ContactForm" className="transparent-button">
-							Let’s start your first project together
+							Let’s start our first project together
 						</Link>
 
 						<br />
 						<br />
 					</div>
 					<div className="applications-container">
-						{/* Acesta este un comentariu în JSX */}
-						<span className="applications-text">Desktop Applications</span>
+						{/* Acesta este un comentariu în JSX <span className="applications-text">Desktop Applications</span><span className="web">WebSites</span>*/}
 						<img className="pcaps" src={pcaps} alt="pcaps" />
 						<img className="erpaps" src={erpaps} alt="erpaps" />
 						<div className="applications-container">
@@ -45,9 +44,7 @@ function HomePage() {
 							alt="apiaps"
 							style={{ margin: "0", pading: "0", border: "0" }}
 						/>{" "}
-						<span className="applications-text">
-							<span className="web">WebSites</span>
-						</span>
+						<span className="applications-text"></span>
 					</div>
 					<br />
 					<p style={{ color: "rgb(29, 92, 168)", fontSize: "22px" }}>
