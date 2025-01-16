@@ -92,7 +92,7 @@ canvas {
 	border-radius: 15px;
 	padding: 10px 20px;
 	background: transparent;
-	border: 2px solid rgba(0, 0, 0, 0.57);
+	border: 2px solid rgba(255, 255, 255, 0.57);
 	font-size: 1.2rem;
 	cursor: pointer;
 	transition: all 0.3s ease;
@@ -225,4 +225,5 @@ canvas {
 		width: 80px;
 		height: 80px;
 	}
+	
 }
