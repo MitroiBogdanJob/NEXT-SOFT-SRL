@@ -119,3 +119,11 @@ button:hover {
 	color: rgba(13, 20, 23, 0.8);
 	margin-top: 20px;
 }
+textarea {
+	width: 27%; /* Lățime completă */
+	height: 60px; /* Înălțime mai mare */
+	padding: 10px; /* Adaugă spațiu intern */
+	border-radius: 8px; /* Colțuri rotunjite */
+	border: 1px solid #ccc; /* Bordură gri */
+	font-size: 16px; /* Dimensiune font mai mare */
+}

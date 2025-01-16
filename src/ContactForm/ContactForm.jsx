@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import styles from "./ContactForm.module.css";
-
 import sphere from "../Images/Sphere/sphere.webp";
 
 function ContactForm() {
@@ -8,6 +7,8 @@ function ContactForm() {
 	const [minDate, setMinDate] = useState("");
 	const [selectedHour, setSelectedHour] = useState("");
 	const [submitted, setSubmitted] = useState(false); // State pentru a verifica dacă s-a trimis
+	const [message, setMessage] = useState(""); // State pentru mesaj
+	const [formErrors, setFormErrors] = useState({}); // State pentru erori
 
 	// Folosim useEffect pentru a seta data de mâine
 	useEffect(() => {
@@ -22,8 +23,26 @@ function ContactForm() {
 		setSelectedHour(hour);
 	};
 
+	const validateForm = () => {
+		const errors = {};
+		if (!document.getElementById("fullname").value)
+			errors.fullName = "Full Name is required";
+		if (!document.getElementById("email").value)
+			errors.email = "Email is required";
+		if (!document.getElementById("date").value)
+			errors.date = "Date is required";
+		if (!selectedHour) errors.hour = "Hour is required";
+		if (!message) errors.message = "Message is required";
+
+		setFormErrors(errors);
+		return Object.keys(errors).length === 0;
+	};
+
 	const handleSubmit = async (e) => {
 		e.preventDefault(); // Previne refresh-ul paginii
+
+		if (!validateForm()) return;
+
 		setSubmitted(true); // Setează formularul ca fiind trimis
 
 		// Creează obiectul cu datele din formular
@@ -32,6 +51,7 @@ function ContactForm() {
 			email: document.getElementById("email").value,
 			date: document.getElementById("date").value,
 			hour: selectedHour,
+			message: message,
 		};
 
 		try {
@@ -73,14 +93,20 @@ function ContactForm() {
 			{!submitted ? (
 				<form className={styles.formcontact} onSubmit={handleSubmit}>
 					<label>First Name </label>
-					<input type="text" id="fullname" name="fullname" /> <br />
+					<input type="text" id="fullname" name="fullname" />
+					{formErrors.fullName && <p>{formErrors.fullName}</p>}
 					<br />
+
 					<label htmlFor="email">Email </label>
-					<input type="email" id="email" name="email"></input> <br />
+					<input type="email" id="email" name="email"></input>
+					{formErrors.email && <p>{formErrors.email}</p>}
 					<br />
+
 					<label htmlFor="date">Pick a date </label>
-					<input type="date" id="date" name="date" min={minDate}></input> <br />
+					<input type="date" id="date" name="date" min={minDate}></input>
+					{formErrors.date && <p>{formErrors.date}</p>}
 					<br />
+
 					<div className={styles.radioGroup}>
 						{[
 							"13:00 PM",
@@ -102,8 +128,22 @@ function ContactForm() {
 							</label>
 						))}
 					</div>
+					{formErrors.hour && <p>{formErrors.hour}</p>}
 					<br />
+
+					<label>Message </label>
+					<textarea
+						id="message"
+						name="message"
+						value={message}
+						onChange={(e) => setMessage(e.target.value)}
+						rows="4" // setează numărul de rânduri vizibile
+						cols="50" // setează lățimea
+					/>
+					{formErrors.message && <p>{formErrors.message}</p>}
+
 					<br />
+
 					<button type="submit">Submit</button>
 				</form>
 			) : (
