@@ -20,7 +20,7 @@ function AboutUsPage() {
 			<br />
 			<br />
 			<div className="Who-We-Are">Who are we?</div>
-			<div className="aboutU-first">
+			<div className="we-transform-lives">
 				-We transform lives through technology-
 			</div>
 			<br />
