@@ -1,45 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <!-- Meta tag pentru responsive design pe mobil -->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta name="description" content="Web site created using create-react-app" />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!-- Manifest pentru aplicațiile mobile -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <title>Next Soft</title>
-    <!-- Adăugarea fișierului de stiluri pentru particles.js -->
-    <link rel="stylesheet" href="particles/css/style.css" />
-  </head>
-  <body>
-    <div id="on-each-page" class="!h-0 !w-0 !overflow-hidden">
-      <div class="background-gradient_main-container__Z3ZLQ background-gradient_visible__MMKDU">
-        <div class="background-gradient_bottom-container__3I3vA">
-          <svg width="100%" height="50%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <defs>
-              <linearGradient id="svg-bg-gradient-bottom" gradientTransform="rotate(0)">
-                <stop offset="20%" stop-color="#200220" stop-opacity="1"></stop>
-                <stop offset="36%" stop-color="#3f9cb5" stop-opacity="1"></stop>
-                <stop offset="52%" stop-color="#F26ED6" stop-opacity="1"></stop>
-                <stop offset="68%" stop-color="#AF58EE" stop-opacity="1"></stop>
-                <stop offset="84%" stop-color="#7E17CA" stop-opacity="1"></stop>
-                <stop offset="100%" stop-color="#4F00F9" stop-opacity="1"></stop>
-              </linearGradient>
-            </defs>
-            <circle r="100%" cx="50%" cy="50%" fill="url(#svg-bg-gradient-bottom)"></circle>
-          </svg>
-        </div>
-      </div>
-    </div>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
 
-    <div id="root"></div>
+		<!-- Meta tag pentru responsive design pe mobil -->
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="theme-color" content="#000000" />
 
-    <!-- Containerul pentru particles.js -->
-    <div id="particles-js"></div>
-    <script src="particles/particles.min.js"></script>
-    <script src="particles/js/app.js"></script>
-  </body>
+		<!-- Meta tag pentru descriere (SEO) -->
+		<meta
+			name="description"
+			content="Next Soft dezvoltă soluții software personalizate: aplicații desktop, web, API, ERP, pentru afaceri inovative. Contactează-ne pentru soluții complete."
+		/>
+
+		<!-- Meta tag pentru cuvinte cheie (SEO) -->
+		<meta
+			name="keywords"
+			content="dezvoltare software, aplicații desktop, aplicații web, dezvoltare API, dezvoltare ERP, software personalizat, soluții software pentru afaceri"
+		/>
+
+		<!-- Meta tag pentru Open Graph (SEO) -->
+		<meta
+			property="og:title"
+			content="Next Soft - Dezvoltare Software Personalizată"
+		/>
+		<meta
+			property="og:description"
+			content="Oferim soluții software complete pentru aplicații desktop, web, API și ERP. Colaborăm pentru a dezvolta soluții care îți vor transforma afacerea."
+		/>
+		<meta property="og:type" content="website" />
+		<meta property="og:image" content="%PUBLIC_URL%/logo192.png" />
+
+		<!-- Meta tag pentru Twitter Card -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta
+			name="twitter:title"
+			content="Next Soft - Dezvoltare Software Personalizată"
+		/>
+		<meta
+			name="twitter:description"
+			content="Next Soft oferă soluții personalizate pentru dezvoltarea de aplicații desktop, web, API și ERP."
+		/>
+		<meta name="twitter:image" content="%PUBLIC_URL%/logo192.png" />
+
+		<!-- Schema Markup (JSON-LD) pentru SEO -->
+		<script type="application/ld+json">
+			{
+				"@context": "http://schema.org",
+				"@type": "Organization",
+				"name": "Next Soft",
+				"url": "https://www.nextsoft.ro",
+				"logo": "%PUBLIC_URL%/logo192.png",
+				"description": "Next Soft dezvoltă soluții software personalizate: aplicații desktop, web, API, ERP, pentru afaceri inovative.",
+				"sameAs": [
+					"https://www.facebook.com/nextsoft",
+					"https://www.linkedin.com/company/nextsoft"
+				],
+				"contactPoint": {
+					"@type": "ContactPoint",
+					"telephone": "+40 123 456 789",
+					"contactType": "Customer Service"
+				}
+			}
+		</script>
+
+		<!-- Manifest pentru aplicațiile mobile -->
+		<link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+		<title>Next Soft</title>
+
+		<!-- Adăugarea fișierului de stiluri pentru particles.js -->
+		<link rel="stylesheet" href="particles/css/style.css" />
+	</head>
+	<body>
+		<div id="on-each-page" class="!h-0 !w-0 !overflow-hidden">
+			<div
+				class="background-gradient_main-container__Z3ZLQ background-gradient_visible__MMKDU"
+			>
+				<div class="background-gradient_bottom-container__3I3vA">
+					<svg
+						width="100%"
+						height="50%"
+						xmlns="http://www.w3.org/2000/svg"
+						xmlns:xlink="http://www.w3.org/1999/xlink"
+					>
+						<defs>
+							<linearGradient
+								id="svg-bg-gradient-bottom"
+								gradientTransform="rotate(0)"
+							>
+								<stop offset="20%" stop-color="#200220" stop-opacity="1"></stop>
+								<stop offset="36%" stop-color="#3f9cb5" stop-opacity="1"></stop>
+								<stop offset="52%" stop-color="#F26ED6" stop-opacity="1"></stop>
+								<stop offset="68%" stop-color="#AF58EE" stop-opacity="1"></stop>
+								<stop offset="84%" stop-color="#7E17CA" stop-opacity="1"></stop>
+								<stop
+									offset="100%"
+									stop-color="#4F00F9"
+									stop-opacity="1"
+								></stop>
+							</linearGradient>
+						</defs>
+						<circle
+							r="100%"
+							cx="50%"
+							cy="50%"
+							fill="url(#svg-bg-gradient-bottom)"
+						></circle>
+					</svg>
+				</div>
+			</div>
+		</div>
+
+		<div id="root"></div>
+
+		<!-- Containerul pentru particles.js -->
+		<div id="particles-js"></div>
+		<script src="particles/particles.min.js"></script>
+		<script src="particles/js/app.js"></script>
+	</body>
 </html>
