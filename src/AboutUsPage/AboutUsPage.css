@@ -5,7 +5,6 @@
 
 .aboutU-first {
 	color: rgb(106, 0, 255);
-	font-size: 16px;
 }
 
 .aboutU {
@@ -89,7 +88,8 @@
 	height: 8px;
 }
 .aboutU-first {
-	font-size: 16.8px; /* Dimensiune text mai mică */
+	padding-top: 10px;
+	font-size: 15.8px; /* Dimensiune text mai mică */
 	font-weight: normal; /* Text normal, nu îngroșat */
 	text-align: center; /* Centrare pe orizontală */
 	color: transparent; /* Text transparent pentru a aplica gradientul */
@@ -107,12 +107,12 @@
 
 @keyframes rotateText {
 	0% {
-		transform: rotate(-2deg); /* Poziția inițială cu un unghi mai mic */
+		transform: rotate(-1.5deg); /* Poziția inițială cu un unghi mai mic */
 	}
 	50% {
-		transform: rotate(2deg); /* Poziția intermediară cu un unghi mai mic */
+		transform: rotate(1.5deg); /* Poziția intermediară cu un unghi mai mic */
 	}
 	100% {
-		transform: rotate(-2deg); /* Revine la poziția inițială */
+		transform: rotate(-1.5deg); /* Revine la poziția inițială */
 	}
 }

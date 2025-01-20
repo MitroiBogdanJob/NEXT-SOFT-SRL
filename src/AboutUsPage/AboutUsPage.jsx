@@ -16,10 +16,10 @@ const sliderImages = [apiApp, webApp, erpApp, desktopApp];
 function AboutUsPage() {
 	return (
 		<>
-			<h6>About Us</h6>
+			<h6 style={{ fontSize: "48px" }}>About Us</h6>
 			<br />
 			<br />
-			<div className="Who-We-Are">Who We Are?</div>
+			<div className="Who-We-Are">Who are we?</div>
 			<div className="aboutU-first">
 				-We transform lives through technology-
 			</div>
@@ -35,7 +35,7 @@ function AboutUsPage() {
 				<br />
 				{/* Imaginile cu efecte */}
 				<div className="image-container">
-				<img src={csds} alt="csds " className="rounded-img" />
+					<img src={csds} alt="csds " className="rounded-img" />
 					<img
 						src={csdevelopment}
 						alt="csdevelopment "
@@ -43,7 +43,6 @@ function AboutUsPage() {
 					/>
 					<img src={support} alt=" support" className="rounded-img" />
 				</div>
-				
 				<br />
 				<br />
 				We are committed to making a positive impact on our people, customers,
