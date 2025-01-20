@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "./Shared.Header-Footer/Header/Header";
 import Footer from "./Shared.Header-Footer/Footer/Footer";
 import HomePage from "./HomePage/HomePage";
@@ -10,8 +10,31 @@ import ServicesPage from "./ServicesPage/ServicesPage";
 import ContactForm from "./ContactForm/ContactForm";
 import TermsAndConditions from "./Shared.Header-Footer/Footer/Footer-Pages/TermsAndConditions"; // Fișierul pe care l-ai creat pentru Termeni și Condiții
 import PrivacyPolicy from "./Shared.Header-Footer/Footer/Footer-Pages/PrivacyPolicy"; // Fișierul pe care l-ai creat pentru Politica de Confidențialitate
+import themeSettings from "./themeSettings.json";
 
 function App() {
+	// Funcție pentru aplicarea temei
+	const applyTheme = (theme) => {
+		const root = document.documentElement;
+
+		// Setează variabilele CSS pentru temă
+		root.style.setProperty(
+			"--background-color",
+			theme.darkSchemeBackgroundColor,
+		);
+		root.style.setProperty("--text-color", theme.darkSchemeTextColor);
+		root.style.setProperty("--brightness", `${theme.brightness}%`);
+		root.style.setProperty("--contrast", `${theme.contrast}%`);
+		root.style.setProperty("--font-family", theme.fontFamily || "inherit");
+	};
+
+	// Aplică tema la montarea componentei
+	useEffect(() => {
+		if (themeSettings.enabled) {
+			applyTheme(themeSettings.theme);
+		}
+	}, []);
+
 	return (
 		<Router>
 			<div id="background-wrapper">

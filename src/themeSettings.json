@@ -1,0 +1,19 @@
+{
+	"schemeVersion": 2,
+	"enabled": true,
+	"theme": {
+		"mode": 1,
+		"brightness": 106,
+		"contrast": 115,
+		"grayscale": 0,
+		"sepia": 0,
+		"useFont": false,
+		"fontFamily": "Segoe UI",
+		"darkSchemeBackgroundColor": "#181a1b",
+		"darkSchemeTextColor": "#e8e6e3",
+		"lightSchemeBackgroundColor": "#dcdad7",
+		"lightSchemeTextColor": "#181a1b",
+		"scrollbarColor": "auto",
+		"selectionColor": "auto"
+	}
+}

@@ -11,7 +11,7 @@ import csds from "./Images-AboutUsPage/csds.png";
 import support from "./Images-AboutUsPage/support.jpg";
 import csdevelopment from "./Images-AboutUsPage/csdevelopment.png";
 
-const sliderImages = [apiApp, webApp, erpApp, desktopApp];
+const sliderImages = [webApp, erpApp, desktopApp, apiApp];
 
 function AboutUsPage() {
 	return (

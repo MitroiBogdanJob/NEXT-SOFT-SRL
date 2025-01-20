@@ -3,6 +3,7 @@
 	filter: var(--tw-blur);
 	transition: opacity 1s cubic-bezier(0.4, 0, 0.2, 1);
 	background: transparent;
+	padding-bottom: 7px;
 }
 #background {
 	position: absolute;
@@ -34,4 +35,18 @@ code {
 	width: 70%;
 	text-align: center;
 	pointer-events: auto; /* Permite interacțiunea cu elementele din spate */
+}
+:root {
+	--brightness: 20%;
+	--contrast: 20%;
+	--font-family: "Arial, sans-serif";
+}
+
+body {
+	background-color: var(--background-color);
+	color: var(--text-color);
+	filter: brightness(var(--brightness)) contrast(var(--contrast));
+	font-family: var(--font-family);
+	margin: 0;
+	padding: 0;
 }
