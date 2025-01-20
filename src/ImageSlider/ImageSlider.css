@@ -1,6 +1,6 @@
 .slider-container {
 	width: 280%; /* Dimensiunea slider-ului (poți ajusta procentul sau folosi valori fixe, ex: 600px) */
-	max-width: 1000px; /* Setează o lățime maximă */
+	max-width: 840px; /* Setează o lățime maximă */
 	margin: 0 auto; /* Centrează slider-ul */
 	overflow: hidden; /* Ascunde elementele care depășesc containerul */
 }
