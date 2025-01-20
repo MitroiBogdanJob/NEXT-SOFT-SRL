@@ -1,10 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./ContactPage.css"; // Import the CSS file for custom styling
 
 const ContactPage = () => {
 	const companyName = "Next Soft Srl";
 	const email = "nextsoftsrl@outlook.com";
 	const phoneNumber = "0758498244";
+
+	// Adăugăm o clasă specifică pentru această pagină
+	useEffect(() => {
+		document.body.classList.add("contact-page");
+
+		// Eliminăm clasa când pagina este schimbată
+		return () => {
+			document.body.classList.remove("contact-page");
+		};
+	}, []);
 
 	return (
 		<div className="contact-container">
@@ -46,6 +56,7 @@ const ContactPage = () => {
 							href="https://www.facebook.com"
 							target="_blank"
 							rel="noopener noreferrer"
+							className="facebook"
 						>
 							Facebook
 						</a>
@@ -54,6 +65,7 @@ const ContactPage = () => {
 							href="https://www.linkedin.com"
 							target="_blank"
 							rel="noopener noreferrer"
+							className="linkedin"
 						>
 							LinkedIn
 						</a>
@@ -62,6 +74,7 @@ const ContactPage = () => {
 							href="https://www.instagram.com"
 							target="_blank"
 							rel="noopener noreferrer"
+							className="instagram"
 						>
 							Instagram
 						</a>
@@ -70,6 +83,7 @@ const ContactPage = () => {
 							href="https://www.tiktok.com"
 							target="_blank"
 							rel="noopener noreferrer"
+							className="tiktok"
 						>
 							TikTok
 						</a>

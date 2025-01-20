@@ -5,7 +5,9 @@
 	height: 100vh; /* Asigură că secțiunea ocupă întreaga înălțime a paginii */
 	overflow: hidden; /* Ascunde conținutul care iese în afară */
 }
-
+.contact-content {
+	color: aqua;
+}
 /* Fundal cu opacitate redusă */
 .background-overlay {
 	position: absolute;
@@ -55,4 +57,38 @@
 
 .contact-info a:hover {
 	color: rgb(33, 118, 183);
+}
+
+/* Culori specifice pentru platforme */
+.social-links a.facebook {
+	color: #1877f2; /* Culoarea specifică pentru Facebook */
+}
+
+.social-links a.linkedin {
+	color: #0a66c2; /* Culoarea specifică pentru LinkedIn */
+}
+
+.social-links a.instagram {
+	color: #e1306c; /* Culoarea specifică pentru Instagram */
+}
+
+.social-links a.tiktok {
+	color: #e1306c; /* Culoarea specifică pentru TikTok */
+}
+
+/* Stiluri pentru hover */
+.social-links a.facebook:hover {
+	color: #145dbf; /* O nuanță mai închisă pentru Facebook */
+}
+
+.social-links a.linkedin:hover {
+	color: #004182; /* O nuanță mai închisă pentru LinkedIn */
+}
+
+.social-links a.instagram:hover {
+	color: #bc2a8d; /* O nuanță mai închisă pentru Instagram */
+}
+
+.social-links a.tiktok:hover {
+	color: #bc2a8d; /* O nuanță mai închisă pentru TikTok */
 }
