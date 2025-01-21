@@ -50,3 +50,21 @@ body {
 	margin: 0;
 	padding: 0;
 }
+
+@media screen and (max-width: 1310px) {
+	header nav {
+		display: none;
+	}
+
+	#root {
+		left: 5%;
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 780px) {
+	#root {
+		left: 1%;
+		width: 98%;
+	}
+}
