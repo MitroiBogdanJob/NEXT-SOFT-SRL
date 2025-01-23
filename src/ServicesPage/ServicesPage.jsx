@@ -52,7 +52,7 @@ const ServicesPage = () => {
 
 	return (
 		<>
-			<h6 style={{ fontSize: "48px" }}>Services</h6>
+			<h6 style={{ fontSize: "48px" }}>From Code to Success</h6>
 			<div
 				className="first-text"
 				style={{

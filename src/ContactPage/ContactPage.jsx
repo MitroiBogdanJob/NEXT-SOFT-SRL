@@ -21,7 +21,7 @@ const ContactPage = () => {
 			{/* Adaugă un strat pentru imagine */}
 			<div className="background-overlay"></div>
 			<div className="contact-content">
-				<h6 style={{ fontSize: "48px" }}>Contact Us</h6>
+				<h6 style={{ fontSize: "48px" }}>Get in touch</h6>
 
 				<div className="contact-info">
 					<p className="p-contact">

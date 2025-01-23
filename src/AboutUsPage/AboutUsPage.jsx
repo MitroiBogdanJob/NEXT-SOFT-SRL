@@ -16,10 +16,10 @@ const sliderImages = [webApp, erpApp, desktopApp, apiApp];
 function AboutUsPage() {
 	return (
 		<>
-			<h6 style={{ fontSize: "48px" }}>About Us</h6>
+			<h6 style={{ fontSize: "48px" }}>Who are we?</h6>
 			<br />
 			<br />
-			<div className="Who-We-Are">Who are we?</div>
+			
 			<div className="we-transform-lives">
 				-We transform lives through technology-
 			</div>

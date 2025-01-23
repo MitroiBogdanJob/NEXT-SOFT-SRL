@@ -1,27 +1,73 @@
 /* Header general */
 .header-container {
-	padding: 5px 20px;
-	color: white;
+	padding: 0px; /* Spațiu în jurul conținutului */
+	color: white; /* Culoarea textului */
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	justify-content: center; /* Centrează meniul pe orizontală */
+	align-items: center; /* Aliniază vertical */
+	margin: 0px; /* Margină pentru a separa meniul de marginea paginii */
 	position: relative;
 	z-index: 10;
+	padding: 30px 43px; /* Padding pentru a face meniul mai larg */
+	display: inline-flex;
+}
+.header-container nav ul {
+	list-style: none; /* Fără puncte sau numere */
+	margin: 0;
+	padding: 0;
+	display: inline-flex; /* Elemente pe orizontală, cu lățime variabilă în funcție de conținut */
+	gap: 40px; /* Spațiu între elemente */
+	border-radius: 15px; /* Colțuri rotunjite pentru meniu */
+	padding: 10px 20px; /* Padding pentru a face meniul mai larg */
+	background-color: rgba(
+		255,
+		255,
+		255,
+		0.15
+	); /* Fundal semitransparent pentru meniu */
+}
+/* Linkurile din meniu */
+.header-container nav ul li a {
+	text-decoration: none; /* Fără subliniere */
+	color: white; /* Culoarea textului */
+	font-size: 1.4rem; /* Mărimea textului */
+	transition: color 0.3s ease; /* Efect de tranziție */
 }
 
+/* Efect hover pentru linkuri */
+.headheader-container er nav ul li a:hover {
+	color: #00bcd4; /* Culoare albastră deschisă */
+}
 /* Logo-ul */
 .header-container .logo {
 	width: 75px;
 	height: auto;
-	margin: 10px 0;
+	margin-left: 0px;
 }
 
 /* Meniul de navigare pe desktop */
 .nav-menu {
 	display: flex;
 	gap: 40px;
+	align-items: center; /* Aliniază textul meniului */
+	margin: 0; /* Eliminăm marginea pentru aliniere perfectă */
 }
 
+/* Centrăm meniul pe mijlocul paginii */
+@media (min-width: 769px) {
+	.header-container {
+		justify-content: left; /* Centrează toate elementele */
+	}
+
+	.logo {
+		right: 450px; /* Poziționăm logo-ul în colțul din stânga */
+		top: 50%;
+		transform: translateY(-50%); /* Centrare perfectă pe verticală */
+		padding-right: 80px;
+	}
+}
+
+/* Stilurile pentru meniul mare */
 .nav-menu ul {
 	list-style: none;
 	margin: 0;
@@ -72,15 +118,23 @@
 @media (max-width: 768px) {
 	.burger-menu {
 		display: flex;
+		padding-left: 500px;
 	}
 
+	.header-container .logo {
+		margin-top: -15px; /* Ridică elementul cu 10px */
+		width: 75px;
+		padding-top: 0px;
+
+		height: auto;
+		margin-left: 0px;
+	}
 	.nav-menu {
 		display: none;
 		flex-direction: column;
 		position: absolute;
 		top: 60px;
 		right: 20px;
-		background-color: rgba(40, 44, 52, 0.95);
 		border-radius: 8px;
 		padding: 15px 20px;
 		gap: 15px;
@@ -104,5 +158,6 @@
 @media (min-width: 769px) {
 	.nav-menu {
 		display: flex;
+		align-items: center;
 	}
 }
