@@ -19,9 +19,9 @@ function AboutUsPage() {
 			<h6 style={{ fontSize: "48px" }}>Who are we?</h6>
 			<br />
 			<br />
-			
+
 			<div className="we-transform-lives">
-				-We transform lives through technology-
+				- We transform lives through technology -
 			</div>
 			<br />
 			<br />
