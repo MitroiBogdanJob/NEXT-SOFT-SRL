@@ -8,7 +8,7 @@
 	margin: 0px; /* Margină pentru a separa meniul de marginea paginii */
 	position: relative;
 	z-index: 10;
-	padding: 30px 43px; /* Padding pentru a face meniul mai larg */
+	padding: 25px 43px; /* Padding pentru a face meniul mai larg */
 	display: inline-flex;
 }
 .header-container nav ul {
@@ -33,7 +33,8 @@
 	font-size: 1.4rem; /* Mărimea textului */
 	transition: color 0.3s ease; /* Efect de tranziție */
 }
-
+.header-container .logo {
+}
 /* Efect hover pentru linkuri */
 .headheader-container er nav ul li a:hover {
 	color: #00bcd4; /* Culoare albastră deschisă */
@@ -53,17 +54,21 @@
 	margin: 0; /* Eliminăm marginea pentru aliniere perfectă */
 }
 
-/* Centrăm meniul pe mijlocul paginii */
+/* Meniul de navigare pe desktop */
 @media (min-width: 769px) {
 	.header-container {
 		justify-content: left; /* Centrează toate elementele */
 	}
 
 	.logo {
-		right: 450px; /* Poziționăm logo-ul în colțul din stânga */
+		right: 200px; /* Mărește distanța de la marginea din dreapta */
 		top: 50%;
-		transform: translateY(-50%); /* Centrare perfectă pe verticală */
-		padding-right: 80px;
+		transform: translateY(-10%); /* Centrare perfectă pe verticală */
+		padding-right: 2px; /* Ajustează padding-ul */
+	}
+
+	.nav-menu {
+		margin-left: 30px; /* Adaugă spațiu mic între logo și meniu */
 	}
 }
 
