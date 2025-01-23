@@ -3,7 +3,9 @@
 	filter: var(--tw-blur);
 	transition: opacity 1s cubic-bezier(0.4, 0, 0.2, 1);
 	background: transparent;
-	padding-bottom: 7px;
+	padding: 0px 0px 0px 0px;
+	border: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
 }
 #background {
 	position: absolute;
@@ -20,17 +22,17 @@ body {
 	padding: 0;
 	overflow: hidden; /* Pentru a elimina scroll-ul */
 	overflow-y: scroll;
-}
-
-code {
-	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-		monospace;
+	font-family: "Roboto", sans-serif; /* Alege fontul dorit */
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 #root {
+	padding-top: 20px;
 	z-index: 1;
 	position: absolute;
-	top: 30px;
+	top: 25px;
 	left: 15%;
 	width: 70%;
 	text-align: center;
@@ -40,15 +42,6 @@ code {
 	--brightness: 20%;
 	--contrast: 20%;
 	--font-family: "Arial, sans-serif";
-}
-
-body {
-	background-color: var(--background-color);
-	color: var(--text-color);
-	filter: brightness(var(--brightness)) contrast(var(--contrast));
-	font-family: var(--font-family);
-	margin: 0;
-	padding: 0;
 }
 
 @media screen and (max-width: 1310px) {

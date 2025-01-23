@@ -53,7 +53,7 @@ const ServicesPage = () => {
 	return (
 		<>
 			<h6 style={{ fontSize: "48px" }}>
-				We transform your ideas into successful software!
+				We transform your ideas into software!
 			</h6>
 			<div
 				className="first-text"
