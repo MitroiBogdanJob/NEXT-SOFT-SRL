@@ -244,3 +244,42 @@
 		font-size: 1rem;
 	}
 }
+
+@media (max-width: 410px) {
+	.burger-menu {
+		display: flex;
+		padding-left: 240px;
+	}
+
+	.header-container .logo {
+		margin-top: -15px; /* Ridică elementul cu 10px */
+		width: 75px;
+		padding-top: 0px;
+
+		height: auto;
+		margin-left: 0px;
+	}
+	.nav-menu {
+		display: none;
+		flex-direction: column;
+		position: absolute;
+		top: 60px;
+		right: 20px;
+		border-radius: 8px;
+		padding: 15px 20px;
+		gap: 15px;
+	}
+
+	.nav-menu.open {
+		display: flex;
+	}
+
+	.nav-menu ul {
+		flex-direction: column;
+		gap: 10px;
+	}
+
+	.nav-menu ul li a {
+		font-size: 1rem;
+	}
+}
