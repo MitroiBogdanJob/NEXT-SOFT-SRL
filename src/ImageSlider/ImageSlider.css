@@ -76,7 +76,7 @@
 		width: 100%; /* Ocupă întreaga lățime disponibilă */
 		height: auto; /* Menține proporțiile imaginii */
 		margin: 0; /* Elimină orice margine */
-		border-radius: 5px; /* Opțional - colțuri ușor rotunjite */
+		border-radius: 40px; /* Opțional - colțuri ușor rotunjite */
 	}
 
 	/* Ajustări suplimentare pentru a reduce distanțele */
