@@ -7,6 +7,9 @@
 	margin-top: 20px;
 	color: white;
 }
+.title-text {
+	padding-top: 3%;
+}
 
 .service-card {
 	width: 100%;
@@ -44,4 +47,21 @@
 
 .beautiful {
 	opacity: 0.7;
+}
+
+@media (max-width: 778px) {
+	.service-title {
+		font-size: 30px;
+	}
+	.beautiful {
+		padding-bottom: 48px;
+	}
+	.service-card {
+		width: 38%; /* Setează o lățime fixă pentru imagini */
+		height: auto;
+	}
+
+	.title-text {
+		font-size: 235%;
+	}
 }

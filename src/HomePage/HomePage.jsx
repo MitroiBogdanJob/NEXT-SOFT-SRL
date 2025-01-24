@@ -9,7 +9,7 @@ import erpaps from "./Images-HomePage/erpaps.webp";
 function HomePage() {
 	return (
 		<>
-			<h6>Your Trusted Partner in Software Solutions</h6>
+			<h6 className="title-text">Your Trusted Partner in Software Solutions</h6>
 			<div className="first-text">
 				No matter what software you need, our team can develop it.
 				<br />
