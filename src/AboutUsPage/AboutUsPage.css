@@ -172,3 +172,18 @@
 		border-radius: 10px; /* Optional - colțuri rotunjite */
 	}
 }
+
+@media (max-width: 410px) {
+	.image-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 15px; /* Distanță între imagini */
+		margin-top: 10px;
+	}
+	.image-container img {
+		width: 110px; /* Setează o lățime fixă pentru imagini */
+		height: auto; /* Menține proporțiile imaginii */
+		border-radius: 10px; /* Optional - colțuri rotunjite */
+	}
+}

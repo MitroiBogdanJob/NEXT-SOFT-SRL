@@ -64,3 +64,24 @@
 		margin: 0 auto; /* Centrare */
 	}
 }
+
+@media (max-width: 410px) {
+	.slider-container {
+		overflow: hidden; /* Ascunde elementele care depășesc containerul */
+		padding: 0; /* Elimină orice padding care poate cauza spațiu */
+		margin: 0 auto; /* Centrare fără spații suplimentare */
+	}
+
+	.slider-image {
+		width: 100%; /* Ocupă întreaga lățime disponibilă */
+		height: auto; /* Menține proporțiile imaginii */
+		margin: 0; /* Elimină orice margine */
+		border-radius: 5px; /* Opțional - colțuri ușor rotunjite */
+	}
+
+	/* Ajustări suplimentare pentru a reduce distanțele */
+	.slider-container img {
+		display: block; /* Elimină spațiul alb din jurul imaginilor inline */
+		margin: 0 auto; /* Centrare fără margini suplimentare */
+	}
+}
