@@ -65,3 +65,26 @@
 		font-size: 235%;
 	}
 }
+
+@media (max-width: 410px) {
+	.service-title {
+		font-size: 20px;
+	}
+	.beautiful {
+		padding-bottom: 48px;
+	}
+	.service-card {
+		width: 36%; /* Setează o lățime fixă pentru imagini */
+	}
+
+	.title-text {
+		font-size: 235%;
+	}
+
+	/* Bogdan*/
+	.beautiful {
+		width: 100%; /* Sau o dimensiune fixă, cum ar fi 500px */
+		height: auto; /* Păstrează proporțiile */
+		max-width: none; /* Asigură că imaginea nu este limitată */
+	}
+}
