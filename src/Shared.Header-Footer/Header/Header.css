@@ -249,10 +249,11 @@
 	.burger-menu {
 		display: flex;
 		padding-left: 240px;
+		margin-top: +12px; /* Ridică elementul cu 10px */
 	}
 
 	.header-container .logo {
-		margin-top: -15px; /* Ridică elementul cu 10px */
+		margin-top: -1px; /* Ridică elementul cu 10px */
 		width: 75px;
 		padding-top: 0px;
 
