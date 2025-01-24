@@ -16,7 +16,7 @@ const sliderImages = [webApp, erpApp, desktopApp, apiApp];
 function AboutUsPage() {
 	return (
 		<>
-			<h6 style={{ fontSize: "48px" }}>Who are we?</h6>
+			<h6 className="Who-We-Are">Who are we?</h6>
 			<br />
 			<br />
 

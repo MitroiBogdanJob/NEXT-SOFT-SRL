@@ -19,3 +19,48 @@
 	object-fit: cover; /* Asigură că imaginile sunt scalate și decupate uniform */
 	border-radius: 40px; /* Opțional: colțuri rotunjite pentru imagini */
 }
+
+@media (max-width: 768px) {
+	.slider-container {
+		width: 170%; /* Dimensiunea slider-ului (poți ajusta procentul sau folosi valori fixe, ex: 600px) */
+		max-width: 103%; /* Setează o lățime maximă */
+		margin: 0 auto; /* Centrează slider-ul */
+		overflow: hidden; /* Ascunde elementele care depășesc containerul */
+	}
+
+	.slider-image {
+		width: 70%; /* Ajustează lățimea imaginii */
+		height: auto;
+		margin: 0 auto; /* Centrare */
+	}
+}
+
+@media (max-width: 900px) {
+	.slider-container {
+		width: 190%; /* Dimensiunea slider-ului (poți ajusta procentul sau folosi valori fixe, ex: 600px) */
+		max-width: 113%; /* Setează o lățime maximă */
+		margin: 0 auto; /* Centrează slider-ul */
+		overflow: hidden; /* Ascunde elementele care depășesc containerul */
+	}
+
+	.slider-image {
+		width: 80%; /* Ajustează lățimea imaginii */
+		height: auto;
+		margin: 0 auto; /* Centrare */
+	}
+}
+
+@media (max-width: 778px) {
+	.slider-container {
+		width: 170%; /* Dimensiunea slider-ului (poți ajusta procentul sau folosi valori fixe, ex: 600px) */
+		max-width: 100%; /* Setează o lățime maximă */
+		margin: 0 auto; /* Centrează slider-ul */
+		overflow: hidden; /* Ascunde elementele care depășesc containerul */
+	}
+
+	.slider-image {
+		width: 80%; /* Ajustează lățimea imaginii */
+		height: auto;
+		margin: 0 auto; /* Centrare */
+	}
+}

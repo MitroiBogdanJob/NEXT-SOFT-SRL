@@ -1,9 +1,11 @@
 .Who-We-Are {
-	color: rgb(33, 118, 183);
+	font-size: 48px;
+	text-align: center;
 	font-size: 40px;
 }
 
 .we-transform-lives {
+	text-align: center;
 	color: rgb(220, 205, 222);
 	font-size: 18px;
 	padding-top: 0px;
@@ -117,5 +119,56 @@
 	}
 	100% {
 		transform: rotate(-1.5deg); /* Revine la poziția inițială */
+	}
+}
+
+/* Stiluri pentru slider pe dispozitive mai mici */
+@media (max-width: 768px) {
+	.slider-image {
+		width: 90%; /* Ajustează lățimea imaginii */
+		height: auto;
+		margin: 0 auto; /* Centrare */
+	}
+}
+
+@media (max-width: 900px) {
+	.we-transform-lives {
+		padding-left: 8%;
+		padding-top: 0px;
+		padding-bottom: 0px;
+	}
+	.Who-We-Are {
+		font-size: 40px;
+		padding-left: 8%;
+	}
+}
+
+@media (max-width: 920px) {
+	.image-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 15px; /* Distanță între imagini */
+		margin-top: 10px;
+	}
+	.image-container img {
+		width: 220px; /* Setează o lățime fixă pentru imagini */
+		height: auto; /* Menține proporțiile imaginii */
+		border-radius: 10px; /* Optional - colțuri rotunjite */
+	}
+}
+
+@media (max-width: 778px) {
+	.image-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 15px; /* Distanță între imagini */
+		margin-top: 10px;
+	}
+	.image-container img {
+		width: 160px; /* Setează o lățime fixă pentru imagini */
+		height: auto; /* Menține proporțiile imaginii */
+		border-radius: 10px; /* Optional - colțuri rotunjite */
 	}
 }
