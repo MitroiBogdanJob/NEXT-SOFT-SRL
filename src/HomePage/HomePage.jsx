@@ -1,12 +1,23 @@
 import React from "react";
 import "./HomePage.css";
 import { Link } from "react-router-dom";
-
-import pcaps from "./Images-HomePage/pcaps.png";
-import apiaps from "./Images-HomePage/apiaps.png";
-import erpaps from "./Images-HomePage/erpaps.webp";
+import DualSlider from "./DualSlider/DualSlider"; // Asigură-te că calea este corectă
 
 function HomePage() {
+	const imagesTop = [
+		require("./DualSlider/Images-DualSlider/1.PNG"),
+		require("./DualSlider/Images-DualSlider/2.PNG"),
+		require("./DualSlider/Images-DualSlider/3.PNG"),
+		require("./DualSlider/Images-DualSlider/4.PNG"),
+	];
+
+	const imagesBottom = [
+		require("./DualSlider/Images-DualSlider/1m.PNG"),
+		require("./DualSlider/Images-DualSlider/2m.PNG"),
+		require("./DualSlider/Images-DualSlider/3m.PNG"),
+		require("./DualSlider/Images-DualSlider/4m.PNG"),
+	];
+
 	return (
 		<>
 			<h6 className="title-text">Software Solutions</h6>
@@ -31,8 +42,10 @@ function HomePage() {
 						<br />
 						<br />
 					</div>
+					{/* Adăugăm DualSlider aici */}
+					<DualSlider imagesTop={imagesTop} imagesBottom={imagesBottom} />
 					<br />
-					<p style={{ color: "rgb(29, 92, 168)", fontSize: "22px" }}>
+					<p style={{ color: "rgb(77, 13, 196)", fontSize: "22px" }}>
 						Technology is our how. And people are our why!
 					</p>
 					<br />
