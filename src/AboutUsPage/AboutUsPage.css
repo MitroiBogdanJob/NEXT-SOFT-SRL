@@ -120,14 +120,8 @@
 	}
 }
 @media (max-width: 8400px) {
-	.Who-We-Are {
-		height: 10px;
-		display: inline-block;
-		margin-right: -5%;
-	}
 	.we-transform-lives {
 		height: 10px;
-		margin-right: -5%;
 	}
 
 	.slider-image {
