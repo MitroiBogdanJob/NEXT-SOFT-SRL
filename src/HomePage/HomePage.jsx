@@ -9,6 +9,7 @@ function HomePage() {
 		require("./DualSlider/Images-DualSlider/2.PNG"),
 		require("./DualSlider/Images-DualSlider/3.PNG"),
 		require("./DualSlider/Images-DualSlider/4.PNG"),
+		require("./DualSlider/Images-DualSlider/6.PNG"),
 	];
 
 	const imagesBottom = [
@@ -16,6 +17,7 @@ function HomePage() {
 		require("./DualSlider/Images-DualSlider/2m.PNG"),
 		require("./DualSlider/Images-DualSlider/3m.PNG"),
 		require("./DualSlider/Images-DualSlider/4m.PNG"),
+		require("./DualSlider/Images-DualSlider/6m.PNG"),
 	];
 
 	return (
@@ -43,7 +45,7 @@ function HomePage() {
 						<br />
 					</div>
 					{/* Adăugăm DualSlider aici */}
-					<DualSlider imagesTop={imagesTop} imagesBottom={imagesBottom} />
+					<DualSlider className="dual-slider" imagesTop={imagesTop} imagesBottom={imagesBottom} />
 					<br />
 					<p style={{ color: "rgb(77, 13, 196)", fontSize: "22px" }}>
 						Technology is our how. And people are our why!

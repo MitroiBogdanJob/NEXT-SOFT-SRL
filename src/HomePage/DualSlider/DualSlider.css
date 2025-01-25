@@ -5,28 +5,15 @@
 	align-items: center; /* Centrează pe verticală */
 	gap: 20px; /* Distanța între rânduri */
 	margin: 20px auto; /* Centrează sliderul în pagină */
-	width: 100%; /* Ocupă întreaga lățime */
+	width: 40%; /* Lasă 30% spațiu pe fiecare parte */
 	max-width: 1200px; /* Limitează lățimea maximă */
-}
-
-.image-row {
-	display: flex;
-	justify-content: center; /* Centrează imaginile pe fiecare rând */
-	gap: 15px; /* Distanța între imagini */
-}
-
-.image-row img {
-	max-width: 200px; /* Dimensiunea maximă a imaginilor */
-	height: auto; /* Menține proporțiile */
-	border-radius: 8px; /* Colțuri rotunjite */
-	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adaugă o umbră ușoară */
 }
 
 .image-row {
 	display: flex;
 	justify-content: flex-start; /* Imaginile încep de la margine */
 	gap: 15px; /* Distanța între imagini */
-	width: calc(200%); /* Lățimea rândului dublă pentru a crea efectul continuu */
+	width: 100%; /* Lățimea rândului ocupă întreaga lățime disponibilă */
 }
 
 .image-row img {
