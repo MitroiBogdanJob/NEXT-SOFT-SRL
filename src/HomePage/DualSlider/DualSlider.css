@@ -1,0 +1,22 @@
+.dual-slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .slider {
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .slider-track {
+    display: flex;
+  }
+  
+  .slider img {
+    object-fit: cover;
+  }
+  

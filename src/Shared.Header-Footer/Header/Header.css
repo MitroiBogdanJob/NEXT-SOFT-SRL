@@ -120,19 +120,10 @@
 	transform: rotate(-45deg) translateY(-8px);
 }
 .nav-menu {
-	opacity: 0.9;
-	display: none;
-	flex-direction: column;
-	position: absolute;
-	top: 60px;
-	right: 20px;
-	border-radius: 140px;
-	background: linear-gradient(
-		235deg,
-		rgba(45, 45, 85, 0.95),
-		rgba(90, 45, 110, 0.9)
-	); /* Gradient mai închis */
-	transition: all 0.3s ease; /* Tranziție pentru hover */
+	display: flex;
+	gap: 40px;
+	align-items: center; /* Aliniază textul meniului */
+	margin: 0; /* Eliminăm marginea pentru aliniere perfectă */
 }
 
 .nav-menu ul li a {
@@ -167,6 +158,21 @@
 
 /* Meniul pe mobil */
 @media (max-width: 768px) {
+	.nav-menu {
+		opacity: 0.9;
+		display: none;
+		flex-direction: column;
+		position: absolute;
+		top: 60px;
+		right: 20px;
+		border-radius: 140px;
+		background: linear-gradient(
+			235deg,
+			rgba(45, 45, 85, 0.95),
+			rgba(90, 45, 110, 0.9)
+		); /* Gradient mai închis */
+		transition: all 0.3s ease; /* Tranziție pentru hover */
+	}
 	.burger-menu {
 		display: flex;
 		padding-left: 500px;

@@ -31,16 +31,6 @@ function HomePage() {
 						<br />
 						<br />
 					</div>
-					<div className="applications-container">
-						{/* Acesta este un comentariu în JSX <span className="applications-text">Desktop Applications</span><span className="web">WebSites</span>*/}
-						<img className="pcaps" src={pcaps} alt="pcaps" />
-						<img className="erpaps" src={erpaps} alt="erpaps" />
-						<div className="applications-container">
-							<div className="website-container"></div>
-						</div>
-
-						<span className="applications-text"></span>
-					</div>
 					<br />
 					<p style={{ color: "rgb(29, 92, 168)", fontSize: "22px" }}>
 						Technology is our how. And people are our why!
