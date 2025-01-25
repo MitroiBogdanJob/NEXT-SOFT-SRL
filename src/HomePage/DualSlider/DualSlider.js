@@ -3,61 +3,39 @@ import { motion } from "framer-motion";
 import "./DualSlider.css";
 
 const DualSlider = ({ imagesTop, imagesBottom }) => {
-  const Slider = ({ images, direction, height, width }) => {
-    return (
-      <div
-        className="slider"
-        style={{ height: height, width: "100%", overflow: "hidden" }}
-      >
-        <motion.div
-          className="slider-track"
-          style={{ display: "flex" }}
-          initial={{ x: direction === "left" ? 0 : -width * images.length }}
-          animate={{ x: direction === "left" ? -width * images.length : 0 }}
-          transition={{
-            repeat: Infinity,
-            repeatType: "loop",
-            duration: 20,
-            ease: "linear",
-          }}
-        >
-          {[...images, ...images].map((src, index) => (
-            <img
-              key={index}
-              src={src}
-              alt={`Slide ${index}`}
-              style={{ height: height, width: width, objectFit: "cover" }}
-            />
-          ))}
-        </motion.div>
-      </div>
-    );
-  };
-
   return (
-    <div
-      className="dual-slider"
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "center",
-        alignItems: "center",
-        height: "100vh",
-        overflow: "hidden",
-      }}
-    >
-      <Slider
-        images={imagesTop}
-        direction="left"
-        height={"730px"}
-        width={1502}
-      />
-      <Slider
-        images={imagesBottom}
-        direction="right"
-        height={"646px"}
-        width={304}
-      />
+    <div className="dual-slider-container">
+      {/* Slider pentru imaginile de sus */}
+      <motion.div
+        className="image-row"
+        initial={{ x: "100%" }}
+        animate={{ x: "-100%" }}
+        transition={{
+          duration: 10,
+          repeat: Infinity,
+          ease: "linear",
+        }}
+      >
+        {imagesTop.map((image, index) => (
+          <img key={index} src={image} alt={`Slide Top ${index + 1}`} />
+        ))}
+      </motion.div>
+
+      {/* Slider pentru imaginile de jos */}
+      <motion.div
+        className="image-row"
+        initial={{ x: "-100%" }}
+        animate={{ x: "100%" }}
+        transition={{
+          duration: 10,
+          repeat: Infinity,
+          ease: "linear",
+        }}
+      >
+        {imagesBottom.map((image, index) => (
+          <img key={index} src={image} alt={`Slide Bottom ${index + 1}`} />
+        ))}
+      </motion.div>
     </div>
   );
 };

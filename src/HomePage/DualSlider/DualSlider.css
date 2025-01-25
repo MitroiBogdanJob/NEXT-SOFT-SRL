@@ -1,21 +1,37 @@
-.dual-slider {
+.dual-slider-container {
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	height: 40%;
-	overflow: hidden;
+	flex-direction: column; /* Imaginile să fie pe două rânduri */
+	justify-content: center; /* Centrează conținutul pe orizontală */
+	align-items: center; /* Centrează pe verticală */
+	gap: 20px; /* Distanța între rânduri */
+	margin: 20px auto; /* Centrează sliderul în pagină */
+	width: 100%; /* Ocupă întreaga lățime */
+	max-width: 1200px; /* Limitează lățimea maximă */
 }
 
-.slider {
-	overflow: hidden;
-	width: 40%;
-}
-
-.slider-track {
+.image-row {
 	display: flex;
+	justify-content: center; /* Centrează imaginile pe fiecare rând */
+	gap: 15px; /* Distanța între imagini */
 }
 
-.slider img {
-	object-fit: cover;
+.image-row img {
+	max-width: 200px; /* Dimensiunea maximă a imaginilor */
+	height: auto; /* Menține proporțiile */
+	border-radius: 8px; /* Colțuri rotunjite */
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adaugă o umbră ușoară */
+}
+
+.image-row {
+	display: flex;
+	justify-content: flex-start; /* Imaginile încep de la margine */
+	gap: 15px; /* Distanța între imagini */
+	width: calc(200%); /* Lățimea rândului dublă pentru a crea efectul continuu */
+}
+
+.image-row img {
+	max-width: 200px; /* Dimensiunea maximă a imaginilor */
+	height: auto; /* Menține proporțiile */
+	border-radius: 8px; /* Colțuri rotunjite */
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adaugă o umbră ușoară */
 }
