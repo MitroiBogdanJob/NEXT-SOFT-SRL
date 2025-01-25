@@ -10,7 +10,7 @@ const servicesData = [
 		description:
 			"Robust desktop applications tailored to your business needs, providing high performance, scalability, and seamless integration with other systems, developed using C# and .NET technologies.",
 		linkText: "Learn more about Desktop Applications",
-		url: "https://en.wikipedia.org/wiki/https://www.walkme.com/glossary/desktop-application/",
+		url: "https://www.vikingsoftware.com/services/desktop-applications/what-is-a-desktop-application/",
 	},
 	{
 		title: "Web Applications",
@@ -52,7 +52,7 @@ const ServicesPage = () => {
 
 	return (
 		<>
-			<h6 className="title-text">We transform your ideas into software!</h6>
+			<h6 className="title-text">Your ideas into software</h6>
 			<div
 				className="first-text"
 				style={{
@@ -78,10 +78,9 @@ const ServicesPage = () => {
 			<br />
 			<div className="applications-container">
 				<img
-					className="beautiful"
+					className="image"
 					src={database}
 					alt="Database solutions for business management"
-					style={{ width: "78%", height: "auto" }}
 				/>
 				<br />
 				<br />

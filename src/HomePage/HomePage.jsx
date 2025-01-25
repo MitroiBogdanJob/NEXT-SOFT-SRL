@@ -9,7 +9,7 @@ import erpaps from "./Images-HomePage/erpaps.webp";
 function HomePage() {
 	return (
 		<>
-			<h6 className="title-text">Your Trusted Partner in Software Solutions</h6>
+			<h6 className="title-text">Software Solutions</h6>
 			<div className="first-text">
 				No matter what software you need, our team can develop it.
 				<br />
@@ -38,12 +38,7 @@ function HomePage() {
 						<div className="applications-container">
 							<div className="website-container"></div>
 						</div>
-						<img
-							className="apiaps"
-							src={apiaps}
-							alt="apiaps"
-							style={{ margin: "0", pading: "0", border: "0" }}
-						/>{" "}
+
 						<span className="applications-text"></span>
 					</div>
 					<br />
