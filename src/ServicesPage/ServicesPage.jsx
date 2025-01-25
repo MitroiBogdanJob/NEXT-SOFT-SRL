@@ -117,21 +117,7 @@ const ServicesPage = () => {
 			<br />
 			<br />
 			{/* Secțiunea cu textul în două culori și fundalul cu 0 și 1 */}
-			<div
-				className="first-text"
-				style={{
-					position: "relative", // pentru a putea poziționa elementele suplimentare
-					fontSize: "26px", // dimensiunea textului
-					fontWeight: "normal", // text normal
-					lineHeight: "1.8", // linii mai distantate pentru o citire mai ușoară
-					letterSpacing: "0.5px", // un pic de spațiu între litere pentru a îmbunătăți lizibilitatea
-					textAlign: "center", // aliniere centrală pentru un aspect mai echilibrat
-					background: "linear-gradient(to right, purple, blue)", // gradient pe text
-					WebkitBackgroundClip: "text", // aplicarea gradientului pe text
-					color: "transparent", // face textul transparent pentru a vedea gradientul
-					zIndex: "1", // asigură că textul este deasupra
-				}}
-			>
+			<div className="first-text2">
 				Move your industry forward, our sector-specific knowledge allows us to
 				build solutions that accommodate what’s happening in your industry
 				today, and prepare you for what’s next.

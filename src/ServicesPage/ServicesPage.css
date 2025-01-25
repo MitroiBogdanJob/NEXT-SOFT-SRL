@@ -51,7 +51,24 @@
 	opacity: 0.7;
 }
 
+.first-text2 {
+	position: relative; /* pentru a putea poziționa elementele suplimentare */
+	font-size: 26px; /* dimensiunea textului */
+	font-weight: normal; /* text normal */
+	line-height: 1.8; /* linii mai distantate pentru o citire mai ușoară */
+	letter-spacing: 0.5px; /* un pic de spațiu între litere pentru a îmbunătăți lizibilitatea */
+	text-align: center; /* aliniere centrală pentru un aspect mai echilibrat */
+	background: linear-gradient(to right, purple, blue); /* gradient pe text */
+	-webkit-background-clip: text; /* aplicarea gradientului pe text */
+	color: transparent; /* face textul transparent pentru a vedea gradientul */
+	z-index: 1; /* asigură că textul este deasupra */
+}
+
 @media (max-width: 778px) {
+	.first-text2 {
+		font-size: 20px; /* dimensiunea textului */
+		line-height: 1.5; /* linii mai distantate pentru o citire mai ușoară */
+	}
 	.service-title {
 		font-size: 30px;
 	}
@@ -66,9 +83,21 @@
 	.title-text {
 		font-size: 235%;
 	}
+	.image {
+		width: 100%;
+		height: auto;
+	}
 }
 
 @media (max-width: 410px) {
+	.first-text2 {
+		font-size: 20px; /* dimensiunea textului */
+		line-height: 1.2; /* linii mai distantate pentru o citire mai ușoară */
+	}
+	.image {
+		width: 90%;
+		height: auto;
+	}
 	.service-title {
 		font-size: 20px;
 	}
@@ -77,7 +106,6 @@
 	}
 	.service-card {
 		width: 36%; /* Setează o lățime fixă pentru imagini */
-
 		max-width: 900px;
 		text-align: center;
 		padding: 5%;

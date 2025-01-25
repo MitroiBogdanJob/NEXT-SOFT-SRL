@@ -36,21 +36,28 @@
 }
 
 @media (max-width: 900px) {
+	.slider-image-container {
+		height: 30%;
+	}
 	.slider-container {
+		height: 30%;
 		width: 190%; /* Dimensiunea slider-ului (poți ajusta procentul sau folosi valori fixe, ex: 600px) */
 		max-width: 113%; /* Setează o lățime maximă */
-		margin: 0 auto; /* Centrează slider-ul */
+		margin: 0; /* Centrează slider-ul */
 		overflow: hidden; /* Ascunde elementele care depășesc containerul */
 	}
 
 	.slider-image {
 		width: 80%; /* Ajustează lățimea imaginii */
-		height: auto;
-		margin: 0 auto; /* Centrare */
+		height: 30%;
+		margin: 0; /* Centrare */
 	}
 }
 
 @media (max-width: 778px) {
+	.slider-image-container {
+		height: 30%;
+	}
 	.slider-container {
 		width: 170%; /* Dimensiunea slider-ului (poți ajusta procentul sau folosi valori fixe, ex: 600px) */
 		max-width: 100%; /* Setează o lățime maximă */

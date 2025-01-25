@@ -48,6 +48,29 @@ body {
 	--font-family: "Arial, sans-serif";
 }
 
+/* Fonturi principale */
+body {
+	font-family: "Montserrat", sans-serif; /* Font pentru textul de bază */
+	font-size: 16px; /* Dimensiune standard */
+	line-height: 1.6; /* Spațiere între rânduri pentru lizibilitate */
+	color: #122078; /* Culoare text */
+	margin: 0;
+	padding: 0;
+}
+
+/* Butoane */
+button {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 600;
+	font-size: 16px;
+	color: #fff;
+	background-color: #007bff; /* Albastru profesional */
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
 @media screen and (max-width: 1310px) {
 	header nav {
 		display: none;
