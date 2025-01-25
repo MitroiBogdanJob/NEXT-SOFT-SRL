@@ -48,6 +48,7 @@
 
 /* Meniul de navigare pe desktop */
 .nav-menu {
+	color: red;
 	display: flex;
 	gap: 40px;
 	align-items: center; /* Aliniază textul meniului */
@@ -118,6 +119,51 @@
 .burger-menu.open span:nth-child(3) {
 	transform: rotate(-45deg) translateY(-8px);
 }
+.nav-menu {
+	opacity: 0.9;
+	display: none;
+	flex-direction: column;
+	position: absolute;
+	top: 60px;
+	right: 20px;
+	border-radius: 140px;
+	background: linear-gradient(
+		235deg,
+		rgba(45, 45, 85, 0.95),
+		rgba(90, 45, 110, 0.9)
+	); /* Gradient mai închis */
+	transition: all 0.3s ease; /* Tranziție pentru hover */
+}
+
+.nav-menu ul li a {
+	color: #e0e0e0; /* Culoare text deschisă pentru contrast */
+	font-size: 1.2rem;
+	text-decoration: none;
+	transition: color 0.3s ease, transform 0.3s ease; /* Efect de hover */
+}
+
+.nav-menu ul li a:hover {
+	color: #50b8ef; /* Roz deschis pentru accent */
+	transform: scale(1.05); /* Ușoară creștere pe hover */
+}
+
+.burger-menu span {
+	background-color: #e0e0e0; /* Alb pentru icon */
+}
+
+.nav-menu.open {
+	display: flex;
+}
+
+/* Efect pe hover pentru întreg meniul */
+.nav-menu:hover {
+	background: linear-gradient(
+		135deg,
+		rgba(45, 45, 85, 1),
+		rgba(90, 45, 110, 1)
+	); /* Gradient mai intens */
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7); /* Umbră mai puternică */
+}
 
 /* Meniul pe mobil */
 @media (max-width: 768px) {
@@ -140,9 +186,7 @@
 		position: absolute;
 		top: 60px;
 		right: 20px;
-		border-radius: 8px;
-		padding: 15px 20px;
-		gap: 15px;
+		border-radius: 18px;
 	}
 
 	.nav-menu.open {
@@ -187,8 +231,7 @@
 		position: absolute;
 		top: 60px;
 		right: 20px;
-		border-radius: 8px;
-		padding: 15px 20px;
+		border-radius: 18px;
 		gap: 15px;
 	}
 
@@ -226,8 +269,7 @@
 		position: absolute;
 		top: 60px;
 		right: 20px;
-		border-radius: 8px;
-		padding: 15px 20px;
+		border-radius: 18px;
 		gap: 15px;
 	}
 
@@ -256,7 +298,6 @@
 		margin-top: -1px; /* Ridică elementul cu 10px */
 		width: 75px;
 		padding-top: 0px;
-
 		height: auto;
 		margin-left: 0px;
 	}
@@ -266,9 +307,8 @@
 		position: absolute;
 		top: 60px;
 		right: 20px;
-		border-radius: 8px;
-		padding: 15px 20px;
 		gap: 15px;
+		border-radius: 18px;
 	}
 
 	.nav-menu.open {
