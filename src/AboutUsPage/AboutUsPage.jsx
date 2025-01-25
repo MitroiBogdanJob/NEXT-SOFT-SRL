@@ -27,10 +27,9 @@ function AboutUsPage() {
 			<br />
 			<ImageSlider images={sliderImages} />
 			<p className="text-large homepage-text-large_homepage-text-lg__24_gZ">
-				What we stand for Our purpose and values We exist to create an
-				environment and a culture that breeds success by caring for our
-				customers as individuals and enabling our people to be the best that
-				they can be. What we strive for Building a sustainable future.
+				Our purpose is to create an environment and a culture that breeds
+				success by caring for our customers as individuals and enabling our
+				people to be the best that they can be.
 				<br />
 				<br />
 				{/* Imaginile cu efecte */}
@@ -46,13 +45,9 @@ function AboutUsPage() {
 				<br />
 				<br />
 				We are committed to making a positive impact on our people, customers,
-				communities and the environment. Discover how we're shaping a
-				sustainable future. We exist to create an environment and a culture that
-				breeds success by caring for our customers as individuals and enabling
-				our people to be the best that they can be. Building a sustainable
-				future We are committed to making a positive impact on our people,
-				customers, communities and the environment. Discover how we're shaping a
-				sustainable future.
+				communities and the environment. <br />
+				We create modern and professional websites that achieve results,
+				conversions and the best possible position in search engines.
 				<br /> <br />
 			</p>
 
