@@ -127,3 +127,9 @@ textarea {
 	border: 1px solid #ccc; /* Bordură gri */
 	font-size: 16px; /* Dimensiune font mai mare */
 }
+
+@media (max-width: 410px) {
+	textarea {
+		width: 90%; /* sau o valoare specifică, de ex. 600px */
+	}
+}
