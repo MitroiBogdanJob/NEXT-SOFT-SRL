@@ -41,6 +41,14 @@ function HomePage() {
 				</strong>{" "}
 				is a leading provider of IT solutions.
 				<br />
+				<div>
+					{/* Link-ul stilizat ca buton */}
+					<Link to="/ContactForm" className="transparent-button">
+						Let’s start our first project together
+					</Link>
+					<br />
+					<br />
+				</div>
 			</div>
 			<div className="menu-contain-text-left">
 				<p className="text-large homepage-text-large_homepage-text-lg__24_gZ">
@@ -51,20 +59,12 @@ function HomePage() {
 						imagesBottom={imagesBottom}
 					/>
 
-					<div>
-						{/* Link-ul stilizat ca buton */}
-						<Link to="/ContactForm" className="transparent-button">
-							Let’s start our first project together
-						</Link>
-						<br />
-						<br />
-					</div>
 					<br />
 					<p className="first-text11">
 						Technology is our how. And people are our why!
 					</p>
 					<br />
-					<br />
+
 					<p className="first-text7">
 						At NEXT SOFT, we bring your ideas to life through expert development
 						and design services.
