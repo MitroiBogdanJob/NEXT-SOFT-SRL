@@ -61,7 +61,7 @@ const ServicesPage = () => {
 					paddingLeft: "20px",
 				}}
 			>
-				<div className="first-text" style={{ textIndent: "20px" }}>
+				<div className="first-text" >
 					Custom desktop applications, web applications, databases, and APIs are
 					at the heart of what we do at NEXT SOFT. Our team specializes in
 					developing high-performance enterprise software, including ERP systems
