@@ -3,8 +3,8 @@
 	"enabled": true,
 	"theme": {
 		"mode": 1,
-		"brightness": 106,
-		"contrast": 115,
+		"brightness": 100,
+		"contrast": 135,
 		"grayscale": 0,
 		"sepia": 0,
 		"useFont": false,

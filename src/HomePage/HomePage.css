@@ -17,7 +17,6 @@
 	align-items: center;
 	text-align: center;
 	color: rgb(250, 250, 250);
-	text-align: center;
 	font-size: 1.3rem;
 	line-height: 1.8rem;
 	margin-top: 20px;
@@ -25,68 +24,14 @@
 	margin-left: auto;
 	margin-right: auto;
 }
-
+.first-text7 {
+	font-size: 1.16rem;
+}
 .menu-contain-text-left {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-}
-.img1 {
-	align-items: center;
-	width: 100px; /* lățimea dorită */
-	height: 100px; /* înălțimea dorită */
-	opacity: 0.8;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* Canvas-ul 3D */
-canvas {
-	width: 100%;
-	height: 400px;
-	background-color: #000;
-}
-
-/* Stiluri pentru sferele interactive */
-.sphere {
-	cursor: pointer;
-	transition: transform 0.3s ease, background-color 0.3s ease;
-}
-
-.sphere:hover {
-	transform: scale(1.2);
-	background-color: #00bcd4;
-}
-
-/* Afișează imaginea pe hover */
-.sphere img {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 150px;
-	height: 150px;
-	display: none;
-	border-radius: 50%;
-}
-
-.sphere:hover img {
-	display: block;
-}
-
-/* Textul din interiorul sferei */
-.sphere-text {
-	color: white;
-	text-align: center;
-	font-size: 0.9rem;
-}
-
-/* Stiluri pentru imaginea de fundal */
-.sphere-background {
-	border-radius: 50%;
-	background-size: cover;
-	background-position: center;
-	width: 100px;
-	height: 100px;
 }
 
 .transparent-button {
@@ -111,87 +56,21 @@ canvas {
 	transform: scale(1.05);
 }
 
-.applications-text {
-	font-family: "Source Code Pro", monospace;
-	color: white;
-	border-radius: 5px;
-	position: relative;
-	transition: all 0.3s ease;
-	background: transparent;
-	border: 2px solid transparent;
-	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-	cursor: pointer;
-	transform-style: preserve-3d;
-	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+.first-text2 {
+	font-size: 1.1rem;
+	line-height: 1.6rem;
+	margin-top: 10px;
+	text-align: center;
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	color: rgb(250, 250, 250);
 }
 
-.applications-text:hover {
-	transform: rotateY(10deg);
-	border-color: #00bcd4;
-	box-shadow: 0 0 10px rgba(0, 188, 212, 0.6), 0 0 15px rgba(156, 39, 176, 0.6);
+strong {
+	font-weight: 600; /* Textul îngroșat */
 }
 
-.applications-text:active {
-	transform: rotateY(-10deg);
-}
-
-.applications-text:hover::before {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	border-radius: 5px;
-	background: linear-gradient(90deg, #00bcd4, #9c27b0);
-	z-index: -1;
-	opacity: 0.2;
-}
-
-.menu-contain-text-left {
-	display: block; /* Schimbăm din flex în block pentru a lăsa imaginile să se alinieze vertical */
-	text-align: center; /* Textul rămâne centrat */
-}
-
-.applications-container {
-	display: flex;
-	flex-wrap: wrap; /* Permite imaginilor să treacă pe un rând nou dacă spațiul nu este suficient */
-	justify-content: center; /* Aliniază imaginile în centru */
-	align-items: center; /* Aliniază imaginile vertical */
-	gap: 20px; /* Spațiu între imagini */
-}
-
-.pcaps,
-.erpaps {
-	width: 150px; /* Ajustează dimensiunea imaginilor */
-	height: auto;
-	margin: 10px; /* Adaugă spațiu exterior */
-}
-
-.applications-text:hover {
-	transform: translate(-50%, -50%) rotateY(10deg);
-	border-color: #00bcd4;
-	box-shadow: 0 0 10px rgba(0, 188, 212, 0.6), 0 0 15px rgba(156, 39, 176, 0.6);
-}
-
-.applications-text:active {
-	transform: translate(-50%, -50%) rotateY(-10deg);
-}
-
-.applications-text:hover::before {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	border-radius: 5px;
-	background: linear-gradient(90deg, #00bcd4, #9c27b0);
-	z-index: -1;
-	opacity: 0.2;
-}
-
-/* Media Queries pentru mobil */
 @media (max-width: 768px) {
 	/* Ajustăm font-size și marginile pentru text pe mobil */
 	.homepage-text-large_homepage-text-lg__24_gZ,
@@ -203,37 +82,13 @@ canvas {
 		margin-right: auto;
 	}
 
-	/* Ajustăm dimensiunea imaginilor */
-	.img1 {
-		width: 80px;
-		height: 80px;
-	}
-
-	/* Ajustăm canvas-ul pentru a fi mai mic pe mobil */
-	canvas {
-		height: 300px; /* Micșorăm înălțimea canvas-ului pe mobil */
-	}
-
-	/* Stiluri pentru butoane și text */
 	.transparent-button {
 		font-size: 1rem;
 		padding: 8px 16px;
 	}
 
-	.applications-text {
+	.first-text2 {
 		font-size: 1rem;
-		padding: 12px 24px;
-	}
-
-	/* Ajustăm sferele interactive pe mobil */
-	.sphere img {
-		width: 120px;
-		height: 120px;
-	}
-
-	/* Ajustăm dimensiunea fundalului pentru sfere */
-	.sphere-background {
-		width: 80px;
-		height: 80px;
+		line-height: 1.5rem;
 	}
 }
