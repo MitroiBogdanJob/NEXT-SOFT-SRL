@@ -118,3 +118,13 @@ strong {
 		line-height: 1.5rem;
 	}
 }
+
+@media (max-width: 410px) {
+	.first-text11 {
+		font-size: 1.2rem;
+	}
+
+	.first-text7 {
+		font-size: 1rem;
+	}
+}
