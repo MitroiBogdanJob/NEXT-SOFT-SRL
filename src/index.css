@@ -70,6 +70,41 @@ button {
 	border-radius: 5px;
 	cursor: pointer;
 }
+/* index.css sau fișierul CSS global al aplicației tale */
+
+/* Setează fontul global pentru întreaga pagină */
+body {
+	font-family: "DM Sans", sans-serif;
+	font-size: 15px;
+	line-height: 1.4em;
+	letter-spacing: 0.1px;
+}
+
+/* Setează fontul pentru titluri */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Sora", sans-serif;
+}
+
+/* Setează fontul pentru textul secundar */
+.secondary-text {
+	font-family: "Chivo", sans-serif;
+}
+
+/* Alte stiluri personalizate */
+a {
+	font-family: "DM Sans", sans-serif;
+}
+
+button,
+input[type="button"],
+input[type="submit"] {
+	font-family: "DM Sans", sans-serif;
+}
 
 @media screen and (max-width: 1310px) {
 	header nav {

@@ -6,67 +6,27 @@ import DualSlider from "./DualSlider/DualSlider"; // Asigură-te că calea este 
 function HomePage() {
 	const imagesTop = [
 		require("./DualSlider/Images-DualSlider/1.PNG"),
+		require("./DualSlider/Images-DualSlider/1m.PNG"),
 		require("./DualSlider/Images-DualSlider/2.PNG"),
+		require("./DualSlider/Images-DualSlider/2m.PNG"),
 		require("./DualSlider/Images-DualSlider/3.PNG"),
+		require("./DualSlider/Images-DualSlider/3m.PNG"),
 		require("./DualSlider/Images-DualSlider/4.PNG"),
+		require("./DualSlider/Images-DualSlider/4m.PNG"),
 		require("./DualSlider/Images-DualSlider/6.PNG"),
-		require("./DualSlider/Images-DualSlider/1.PNG"),
-		require("./DualSlider/Images-DualSlider/2.PNG"),
-		require("./DualSlider/Images-DualSlider/3.PNG"),
-		require("./DualSlider/Images-DualSlider/4.PNG"),
-		require("./DualSlider/Images-DualSlider/6.PNG"),
-		require("./DualSlider/Images-DualSlider/1.PNG"),
-		require("./DualSlider/Images-DualSlider/2.PNG"),
-		require("./DualSlider/Images-DualSlider/3.PNG"),
-		require("./DualSlider/Images-DualSlider/4.PNG"),
-		require("./DualSlider/Images-DualSlider/6.PNG"),
-		require("./DualSlider/Images-DualSlider/1.PNG"),
-		require("./DualSlider/Images-DualSlider/2.PNG"),
-		require("./DualSlider/Images-DualSlider/3.PNG"),
-		require("./DualSlider/Images-DualSlider/4.PNG"),
-		require("./DualSlider/Images-DualSlider/6.PNG"),
-		require("./DualSlider/Images-DualSlider/1.PNG"),
-		require("./DualSlider/Images-DualSlider/2.PNG"),
-		require("./DualSlider/Images-DualSlider/3.PNG"),
-		require("./DualSlider/Images-DualSlider/4.PNG"),
-		require("./DualSlider/Images-DualSlider/6.PNG"),
+		require("./DualSlider/Images-DualSlider/6m.PNG"),
 	];
 
 	const imagesBottom = [
+		require("./DualSlider/Images-DualSlider/1.PNG"),
 		require("./DualSlider/Images-DualSlider/1m.PNG"),
+		require("./DualSlider/Images-DualSlider/2.PNG"),
 		require("./DualSlider/Images-DualSlider/2m.PNG"),
+		require("./DualSlider/Images-DualSlider/3.PNG"),
 		require("./DualSlider/Images-DualSlider/3m.PNG"),
+		require("./DualSlider/Images-DualSlider/4.PNG"),
 		require("./DualSlider/Images-DualSlider/4m.PNG"),
-		require("./DualSlider/Images-DualSlider/6m.PNG"),
-		require("./DualSlider/Images-DualSlider/1m.PNG"),
-		require("./DualSlider/Images-DualSlider/2m.PNG"),
-		require("./DualSlider/Images-DualSlider/3m.PNG"),
-		require("./DualSlider/Images-DualSlider/4m.PNG"),
-		require("./DualSlider/Images-DualSlider/6m.PNG"),
-		require("./DualSlider/Images-DualSlider/1m.PNG"),
-		require("./DualSlider/Images-DualSlider/2m.PNG"),
-		require("./DualSlider/Images-DualSlider/3m.PNG"),
-		require("./DualSlider/Images-DualSlider/4m.PNG"),
-		require("./DualSlider/Images-DualSlider/6m.PNG"),
-		require("./DualSlider/Images-DualSlider/1m.PNG"),
-		require("./DualSlider/Images-DualSlider/2m.PNG"),
-		require("./DualSlider/Images-DualSlider/3m.PNG"),
-		require("./DualSlider/Images-DualSlider/4m.PNG"),
-		require("./DualSlider/Images-DualSlider/6m.PNG"),
-		require("./DualSlider/Images-DualSlider/1m.PNG"),
-		require("./DualSlider/Images-DualSlider/2m.PNG"),
-		require("./DualSlider/Images-DualSlider/3m.PNG"),
-		require("./DualSlider/Images-DualSlider/4m.PNG"),
-		require("./DualSlider/Images-DualSlider/6m.PNG"),
-		require("./DualSlider/Images-DualSlider/1m.PNG"),
-		require("./DualSlider/Images-DualSlider/2m.PNG"),
-		require("./DualSlider/Images-DualSlider/3m.PNG"),
-		require("./DualSlider/Images-DualSlider/4m.PNG"),
-		require("./DualSlider/Images-DualSlider/6m.PNG"),
-		require("./DualSlider/Images-DualSlider/1m.PNG"),
-		require("./DualSlider/Images-DualSlider/2m.PNG"),
-		require("./DualSlider/Images-DualSlider/3m.PNG"),
-		require("./DualSlider/Images-DualSlider/4m.PNG"),
+		require("./DualSlider/Images-DualSlider/6.PNG"),
 		require("./DualSlider/Images-DualSlider/6m.PNG"),
 	];
 
@@ -84,6 +44,13 @@ function HomePage() {
 			</div>
 			<div className="menu-contain-text-left">
 				<p className="text-large homepage-text-large_homepage-text-lg__24_gZ">
+					{/* Adăugăm DualSlider aici */}
+					<DualSlider
+						className="dual-slider"
+						imagesTop={imagesTop}
+						imagesBottom={imagesBottom}
+					/>
+
 					<div>
 						{/* Link-ul stilizat ca buton */}
 						<Link to="/ContactForm" className="transparent-button">
@@ -92,41 +59,28 @@ function HomePage() {
 						<br />
 						<br />
 					</div>
-					{/* Adăugăm DualSlider aici */}
-					<DualSlider
-						className="dual-slider"
-						imagesTop={imagesTop}
-						imagesBottom={imagesBottom}
-					/>
 					<br />
-					<p className="first-text2">
+					<p className="first-text11">
 						Technology is our how. And people are our why!
 					</p>
 					<br />
 					<br />
 					<p className="first-text7">
-						At{" "}
-						<strong className="strong-font-normal highlight">NEXT SOFT</strong>,
-						we bring your ideas to life through expert development and design
-						services.
+						At NEXT SOFT, we bring your ideas to life through expert development
+						and design services.
 						<br />
-						We specialize in{" "}
-						<strong className="strong-font-normal">
-							Desktop applications,{" "}
-						</strong>
-						<strong className="strong-font-normal">
-							Web applications, Databases, ERP systems
-						</strong>
-						<strong className="strong-font-normal"> and APIs</strong>.<br />
+						<br />
+						<p style={{ fontSize: "1.4rem" }}>We specialize in: </p>
+						<p className="first-text10">Desktop applications, </p>
+						<p className="first-text10">Web applications</p>
+						<p className="first-text10">Databases </p>
+						<p className="first-text10">ERP systems </p>
+						<p className="first-text10">APIs</p>
+						<br />
 						We are committed to building long-term partnerships that evolve with
-						your <strong className="strong-font-normal">business needs</strong>.
-						We provide impactful, scalable, and{" "}
-						<strong className="strong-font-normal">
-							user-friendly digital products{" "}
-						</strong>
-						that drive your{" "}
-						<strong className="strong-font-normal">business growth</strong>{" "}
-						globally.
+						yourbusiness needs. We provide impactful, scalable, and{" "}
+						user-friendly digital products that drive your business growth
+						GLOBALLY.
 						<br />
 						<br />
 						We have been harnessing technology to drive meaningful change.

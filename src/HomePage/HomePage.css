@@ -56,17 +56,42 @@
 	transform: scale(1.05);
 }
 
-.first-text2 {
-	font-size: 1.1rem;
+.first-text11 {
+	font-size: 1.4rem;
 	line-height: 1.6rem;
 	margin-top: 10px;
 	text-align: center;
 	max-width: 800px;
 	margin-left: auto;
 	margin-right: auto;
-	color: rgb(250, 250, 250);
+}
+.first-text10 {
+	position: relative; /* pentru a putea poziționa elementele suplimentare */
+	font-size: 24px; /* dimensiunea textului */
+	font-weight: normal; /* text normal */
+	line-height: 1.8; /* linii mai distantate pentru o citire mai ușoară */
+	letter-spacing: 0.5px; /* un pic de spațiu între litere pentru a îmbunătăți lizibilitatea */
+	text-align: center; /* aliniere centrală pentru un aspect mai echilibrat */
+	background: linear-gradient(to right, purple, blue); /* gradient pe text */
+	-webkit-background-clip: text; /* aplicarea gradientului pe text */
+	color: transparent; /* face textul transparent pentru a vedea gradientul */
+	z-index: 1; /* asigură că textul este deasupra */
+
+	/* Îmbunătățiri vizuale */
+	background-color: rgba(0, 0, 0, 0.1); /* Adăugăm un fundal ușor transparent */
+	padding: 10px; /* Un pic de padding pentru a da mai mult spațiu în jurul textului */
+	border-radius: 8px; /* Colțuri rotunjite pentru un aspect mai plăcut */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Umbră subtilă pentru a adăuga profunzime */
+	transition: all 0.3s ease; /* Adăugăm o tranziție pentru efecte vizuale */
 }
 
+.first-text10:hover {
+	color: #f0f0f0; /* Schimbăm culoarea textului la hover */
+	background-color: rgba(0, 0, 0, 0.2); /* Schimbăm fundalul la hover */
+	transform: scale(
+		1.05
+	); /* Mărim puțin elementul la hover pentru efect de zoom */
+}
 strong {
 	font-weight: 600; /* Textul îngroșat */
 }
