@@ -215,3 +215,43 @@
 		color: white;
 	}
 }
+
+@media (max-width: 350px) {
+	.image-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 15px; /* Distanță între imagini */
+		margin-top: 10px;
+	}
+	.image-container img {
+		width: 100px; /* Setează o lățime fixă pentru imagini */
+		height: auto; /* Menține proporțiile imaginii */
+		border-radius: 10px; /* Optional - colțuri rotunjite */
+	}
+}
+
+@media (max-width: 440px) {
+	.image-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 15px; /* Distanță între imagini */
+		margin-top: 10px;
+	}
+	.image-container img {
+		width: 110px; /* Setează o lățime fixă pentru imagini */
+		height: auto; /* Menține proporțiile imaginii */
+		border-radius: 10px; /* Optional - colțuri rotunjite */
+	}
+	.values-section {
+		font-size: 0.8rem;
+	}
+
+	.text-large homepage-text-large_homepage-text-lg__24_gZ {
+		font-size: 0.9rem;
+	}
+	.we-transform-lives {
+		font-size: 1rem;
+	}
+}
