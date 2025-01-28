@@ -1,3 +1,9 @@
+.binary-background {
+	background: none !important;
+	opacity: 1 !important;
+	display: none !important;
+}
+
 .first-text {
 	text-indent: 20px; /* Dacă vrei un spațiu înaintea textului pe prima linie */
 	margin: 0 auto; /* Centrarea elementului în containerul său */
