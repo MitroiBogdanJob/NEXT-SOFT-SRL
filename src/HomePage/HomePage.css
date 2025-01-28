@@ -1,7 +1,5 @@
-/* Stilurile existente pentru text și layout */
-
 .homepage-text-large_homepage-text-lg__24_gZ {
-	color: rgb(250, 250, 250);
+	color: var(--text-color); /* Folosește variabila de culoare pentru text */
 	text-align: center;
 	font-size: 1rem;
 	line-height: 1.8rem;
@@ -9,32 +7,23 @@
 	max-width: 800px;
 	margin-left: auto;
 	margin-right: auto;
-}
-
-.first-text {
+  }
+  
+  .first-text {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	color: rgb(250, 250, 250);
+	color: var(--text-color); /* Folosește variabila de culoare pentru text */
 	font-size: 1.3rem;
 	line-height: 1.8rem;
 	margin-top: 20px;
 	max-width: 800px;
 	margin-left: auto;
 	margin-right: auto;
-}
-.first-text7 {
-	font-size: 1.16rem;
-}
-.menu-contain-text-left {
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-}
-
-.transparent-button {
+  }
+  
+  .transparent-button {
 	border-radius: 15px;
 	padding: 10px 20px;
 	background: transparent;
@@ -43,20 +32,20 @@
 	cursor: pointer;
 	transition: all 0.3s ease;
 	margin-top: 20px;
-	text-decoration: none; /* Elimină sublinierea implicită a Link */
-	color: inherit; /* Păstrează culoarea textului */
-	display: inline-block; /* Pentru a se comporta ca un buton */
+	text-decoration: none;
+	color: inherit;
+	display: inline-block;
 	text-align: center;
-}
-
-.transparent-button:hover {
+  }
+  
+  .transparent-button:hover {
 	background-color: rgba(0, 188, 212, 0.1);
 	color: white;
 	border-color: #00bcd4;
 	transform: scale(1.05);
-}
-
-.first-text11 {
+  }
+  
+  .first-text11 {
 	font-size: 1.4rem;
 	line-height: 1.6rem;
 	margin-top: 10px;
@@ -64,56 +53,54 @@
 	max-width: 800px;
 	margin-left: auto;
 	margin-right: auto;
-}
-.first-text10 {
-	position: relative; /* pentru a putea poziționa elementele suplimentare */
-	font-size: 24px; /* dimensiunea textului */
-	font-weight: normal; /* text normal */
-	line-height: 1.8; /* linii mai distantate pentru o citire mai ușoară */
-	letter-spacing: 0.5px; /* un pic de spațiu între litere pentru a îmbunătăți lizibilitatea */
-	text-align: center; /* aliniere centrală pentru un aspect mai echilibrat */
-	background: linear-gradient(to right, purple, blue); /* gradient pe text */
-	-webkit-background-clip: text; /* aplicarea gradientului pe text */
-	color: transparent; /* face textul transparent pentru a vedea gradientul */
-	z-index: 1; /* asigură că textul este deasupra */
-
-	/* Îmbunătățiri vizuale */
-	background-color: rgba(0, 0, 0, 0.1); /* Adăugăm un fundal ușor transparent */
-	padding: 10px; /* Un pic de padding pentru a da mai mult spațiu în jurul textului */
-	border-radius: 8px; /* Colțuri rotunjite pentru un aspect mai plăcut */
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Umbră subtilă pentru a adăuga profunzime */
-	transition: all 0.3s ease; /* Adăugăm o tranziție pentru efecte vizuale */
-}
-
-.first-text10:hover {
-	color: #f0f0f0; /* Schimbăm culoarea textului la hover */
-	background-color: rgba(0, 0, 0, 0.2); /* Schimbăm fundalul la hover */
-	transform: scale(
-		1.05
-	); /* Mărim puțin elementul la hover pentru efect de zoom */
-}
-strong {
-	font-weight: 600; /* Textul îngroșat */
-}
-
-@media (max-width: 768px) {
-	/* Ajustăm font-size și marginile pentru text pe mobil */
+  }
+  
+  .first-text10 {
+	position: relative;
+	font-size: 24px;
+	font-weight: normal;
+	line-height: 1.8;
+	letter-spacing: 0.5px;
+	text-align: center;
+	background: linear-gradient(to right, purple, blue);
+	-webkit-background-clip: text;
+	color: transparent;
+	z-index: 1;
+	background-color: rgba(0, 0, 0, 0.1);
+	padding: 10px;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	transition: all 0.3s ease;
+  }
+  
+  .first-text10:hover {
+	color: #f0f0f0;
+	background-color: rgba(0, 0, 0, 0.2);
+	transform: scale(1.05);
+  }
+  
+  strong {
+	font-weight: 600;
+  }
+  
+  @media (max-width: 768px) {
 	.homepage-text-large_homepage-text-lg__24_gZ,
 	.first-text {
-		font-size: 1.1rem; /* Reducem fontul pentru a fi mai citibil pe mobil */
-		line-height: 1.6rem;
-		max-width: 90%;
-		margin-left: auto;
-		margin-right: auto;
+	  font-size: 1.1rem;
+	  line-height: 1.6rem;
+	  max-width: 90%;
+	  margin-left: auto;
+	  margin-right: auto;
 	}
-
+  
 	.transparent-button {
-		font-size: 1rem;
-		padding: 8px 16px;
+	  font-size: 1rem;
+	  padding: 8px 16px;
 	}
-
+  
 	.first-text2 {
-		font-size: 1rem;
-		line-height: 1.5rem;
+	  font-size: 1rem;
+	  line-height: 1.5rem;
 	}
-}
+  }
+  

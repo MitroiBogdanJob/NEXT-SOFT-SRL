@@ -26,7 +26,9 @@ function AboutUsPage() {
 			<br />
 			<br />
 			<ImageSlider images={sliderImages} />
-			<p className="text-large homepage-text-large_homepage-text-lg__24_gZ">
+
+			{/* Modificare: înlocuim <p> cu <div> */}
+			<div className="text-large homepage-text-large_homepage-text-lg__24_gZ">
 				Our purpose is to create an environment and a culture that breeds
 				success by caring for our customers as individuals and enabling our
 				people to be the best that they can be.
@@ -49,7 +51,7 @@ function AboutUsPage() {
 				We create modern and professional websites that achieve results,
 				conversions and the best possible position in search engines.
 				<br /> <br />
-			</p>
+			</div>
 
 			{/* Secțiunea nouă */}
 			<div className="values-section">
