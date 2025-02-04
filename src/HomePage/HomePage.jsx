@@ -13,6 +13,8 @@ function HomePage() {
 		require("./DualSlider/Images-DualSlider/3m.PNG"),
 		require("./DualSlider/Images-DualSlider/4.PNG"),
 		require("./DualSlider/Images-DualSlider/4m.PNG"),
+		require("./DualSlider/Images-DualSlider/1.PNG"),
+		require("./DualSlider/Images-DualSlider/1m.PNG"),
 	];
 
 	const imagesBottom = [
@@ -24,6 +26,8 @@ function HomePage() {
 		require("./DualSlider/Images-DualSlider/3m.PNG"),
 		require("./DualSlider/Images-DualSlider/4.PNG"),
 		require("./DualSlider/Images-DualSlider/4m.PNG"),
+		require("./DualSlider/Images-DualSlider/1.PNG"),
+		require("./DualSlider/Images-DualSlider/1m.PNG"),
 	];
 
 	return (
@@ -72,7 +76,6 @@ function HomePage() {
 						<p className="first-text10">Databases </p>
 						<p className="first-text10">APIs</p>
 						<p className="first-text10">Video editing </p>
-					
 						<br />
 						We are committed to building long-term partnerships that evolve with
 						yourbusiness needs. We provide impactful, scalable, and{" "}
