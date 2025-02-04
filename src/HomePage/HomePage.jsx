@@ -70,8 +70,9 @@ function HomePage() {
 						<p className="first-text10">Desktop applications, </p>
 						<p className="first-text10">Web applications</p>
 						<p className="first-text10">Databases </p>
-						<p className="first-text10">ERP systems </p>
 						<p className="first-text10">APIs</p>
+						<p className="first-text10">Video editing </p>
+					
 						<br />
 						We are committed to building long-term partnerships that evolve with
 						yourbusiness needs. We provide impactful, scalable, and{" "}
