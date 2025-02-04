@@ -80,7 +80,7 @@ function HomePage() {
 						We are committed to building long-term partnerships that evolve with
 						yourbusiness needs. We provide impactful, scalable, and{" "}
 						user-friendly digital products that drive your business growth
-						GLOBALLY.
+						globally.
 						<br />
 						<br />
 						We have been harnessing technology to drive meaningful change.
