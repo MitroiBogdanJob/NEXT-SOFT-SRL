@@ -13,8 +13,6 @@ function HomePage() {
 		require("./DualSlider/Images-DualSlider/3m.PNG"),
 		require("./DualSlider/Images-DualSlider/4.PNG"),
 		require("./DualSlider/Images-DualSlider/4m.PNG"),
-		require("./DualSlider/Images-DualSlider/6.PNG"),
-		require("./DualSlider/Images-DualSlider/6m.PNG"),
 	];
 
 	const imagesBottom = [
@@ -26,8 +24,6 @@ function HomePage() {
 		require("./DualSlider/Images-DualSlider/3m.PNG"),
 		require("./DualSlider/Images-DualSlider/4.PNG"),
 		require("./DualSlider/Images-DualSlider/4m.PNG"),
-		require("./DualSlider/Images-DualSlider/6.PNG"),
-		require("./DualSlider/Images-DualSlider/6m.PNG"),
 	];
 
 	return (
