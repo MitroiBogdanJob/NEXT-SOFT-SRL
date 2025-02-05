@@ -1,7 +1,6 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom"; // Importă Link din react-router-dom
+import React from "react";
+import { Link } from "react-router-dom";
 import "./ServicesPage.css";
-
 import database from "./Images-ServicesPage/database.jpg";
 
 const servicesData = [
@@ -9,144 +8,101 @@ const servicesData = [
 		title: "Desktop Applications",
 		description:
 			"Robust desktop applications tailored to your business needs, providing high performance, scalability, and seamless integration with other systems, developed using C# and .NET technologies.",
-		linkText: "Learn more about Desktop Applications",
-		url: "https://www.vikingsoftware.com/services/desktop-applications/what-is-a-desktop-application/",
 	},
 	{
 		title: "Web Applications",
 		description:
 			"Custom web applications designed for responsiveness, scalability, and user-friendly interfaces, ensuring seamless experiences across devices. Built with C#, ASP.NET Core, and modern front-end.",
-		linkText: "Learn more about Web Applications",
-		url: "https://en.wikipedia.org/wiki/Web_application",
 	},
 	{
 		title: "Databases",
 		description:
 			"Efficient and secure database solutions using Microsoft SQL Server, designed to store, manage, and retrieve your data with ease, supporting your business operations.",
-		linkText: "Learn more about Databases",
-		url: "https://en.wikipedia.org/wiki/Database",
 	},
 	{
 		title: "ERP Systems",
 		description:
 			"Integrated ERP systems built with C# and Microsoft SQL Server that streamline your core business processes, improve decision-making, and enhance overall efficiency.",
-		linkText: "Learn more about ERP Systems",
-		url: "https://en.wikipedia.org/wiki/Enterprise_resource_planning",
 	},
 	{
 		title: "APIs",
 		description:
 			"Custom API development using C# and ASP.NET Core to enable seamless communication between your systems and third-party applications, ensuring smooth data flow.",
-		linkText: "Learn more about APIs",
-		url: "https://en.wikipedia.org/wiki/API",
 	},
 ];
 
 const ServicesPage = () => {
-	const [iframeUrl, setIframeUrl] = useState("");
-
-	const handleReadMore = (e, url) => {
-		e.preventDefault(); // Previne deschiderea link-ului într-o filă nouă
-		setIframeUrl(url); // Setează URL-ul în iframe
-	};
-
 	return (
 		<>
 			<h6 className="title-text">Your ideas into software</h6>
-			<div
-				className="first-text"
-				style={{
-					display: "flex",
-					justifyContent: "space-between",
-					paddingLeft: "20px",
-				}}
-			>
-				<div className="first-text">
-					Crafting high-performance digital solutions that help businesses
-					thrive.
-					<br /> By focusing on intuitive design, responsive functionality, and
-					seamless integration across platforms, we deliver impactful solutions
-					that refine user experience, increase operational capacity, and
-					support your business growth globally.
-				</div>
+			<div className="first-text">
+				Crafting high-performance digital solutions that help businesses thrive.
+				By focusing on intuitive design, responsive functionality, and seamless
+				integration across platforms, we deliver impactful solutions that refine
+				user experience, increase operational capacity, and support your
+				business growth globally.
 			</div>
+			<br />
 
-			<br />
-			<br />
 			<div className="applications-container">
 				<img
 					className="image"
 					src={database}
 					alt="Database solutions for business management"
 				/>
-				<br />
-				<br />
-				<br />
 			</div>
-			<div className="services-grid">
+
+			<div className="services-section">
 				{servicesData.map((service, index) => (
-					<div className="service-card" key={index}>
-						<h3 className="service-title">{service.title}</h3>
-						<p className="service-description">{service.description}</p>
-						<a
-							href={service.url} // Folosește URL-ul din obiectul service
-							className="service-link"
-							rel="noopener noreferrer" // Adaugă rel pentru securitate
-							onClick={(e) => handleReadMore(e, service.url)} // La click se va încărca pagina oficială în iframe
+					<div
+						key={index}
+						className="service-card"
+						style={{
+							maxWidth: "800px",
+							margin: "20px auto",
+							padding: "20px",
+							border: "1px solid #ddd",
+							borderRadius: "18px",
+							boxShadow: "0 4px 8px rgba(101, 101, 101, 0.1)",
+							background: "#222",
+							color: "white",
+						}}
+					>
+						<h2
+							className="service-title"
+							style={{ fontFamily: "inherit", textAlign: "center" }}
 						>
-							{service.linkText} →
-						</a>
+							{service.title}
+						</h2>
+						<p className="service-description" style={{ textAlign: "justify" }}>
+							{service.description}
+						</p>
 					</div>
 				))}
 			</div>
-			{/* Secțiune cu iframe pentru a încărca paginile oficiale */}
-			{iframeUrl && (
-				<div className="iframe-container">
-					<iframe
-						src={iframeUrl}
-						width="100%"
-						height="600px"
-						title="Service Information"
-					></iframe>
-				</div>
-			)}
-			<br />
-			<br />
-			<br />
-			{/* Secțiunea cu textul în două culori și fundalul cu 0 și 1 */}
-			<div className="first-text2">
-				Move your industry forward, our sector-specific knowledge allows us to
+
+			<div
+				className="first-text2"
+				style={{
+					textAlign: "center",
+					marginTop: "40px",
+					fontSize: "24px",
+					fontWeight: "bold",
+				}}
+			>
+				Move your industry forward. Our sector-specific knowledge allows us to
 				build solutions that accommodate what’s happening in your industry
 				today, and prepare you for what’s next.
 			</div>
 
-			<p className="text-large homepage-text-large_homepage-text-lg__24_gZ">
-				{/* Link-ul stilizat ca buton */}
+			<p
+				className="text-center"
+				style={{ textAlign: "center", marginTop: "20px" }}
+			>
 				<Link to="/ContactForm" className="transparent-button">
 					Let’s start your first project together
 				</Link>
 			</p>
-			<br />
-			<br />
-			{/* Adăugarea efectului subtil cu 0 și 1 pe lateralele textului */}
-			<div
-				className="binary-background"
-				style={{
-					position: "absolute",
-					top: "0",
-					left: "0",
-					right: "0",
-					bottom: "0",
-					zIndex: "-1", // face ca fundalul să fie în spatele textului
-					background:
-						"linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1))",
-					backgroundSize: "20px 20px", // dimensiunea pătratelor pentru efectul binar
-					backgroundPosition: "0 0",
-					animation: "binaryAnim 3s infinite",
-					width: "100%",
-					height: "100%",
-				}}
-			></div>
 		</>
 	);
 };

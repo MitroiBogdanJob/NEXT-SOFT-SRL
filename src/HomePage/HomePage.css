@@ -1,9 +1,9 @@
 /* Stilurile existente pentru text și layout */
 
-.homepage-text-large_homepage-text-lg__24_gZ {
+.text-center {
 	color: rgb(250, 250, 250);
 	text-align: center;
-	font-size: 1rem;
+	font-size: 1.36rem;
 	line-height: 1.8rem;
 	margin-top: 20px;
 	max-width: 800px;
@@ -99,7 +99,7 @@ strong {
 
 @media (max-width: 768px) {
 	/* Ajustăm font-size și marginile pentru text pe mobil */
-	.homepage-text-large_homepage-text-lg__24_gZ,
+	.text-center,
 	.first-text {
 		font-size: 1.1rem; /* Reducem fontul pentru a fi mai citibil pe mobil */
 		line-height: 1.6rem;

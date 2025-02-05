@@ -33,10 +33,10 @@ function HomePage() {
 	return (
 		<>
 			<h6 className="title-text">Software Solutions</h6>
-			<div className="text-large homepage-text-large_homepage-text-lg__24_gZ">
+			<div className="text-center">
 				Unlock Your Business Potential with Custom Websites, Desktop
-				Applications, API Solutions and Video Editing. Build Your Online Success
-				Together!
+				Applications, API Solutions and Video Editing. Let's Build Your Online
+				Success Together!
 				<br />
 				<br />
 				No matter what software you need, our team can develop it.
@@ -51,7 +51,7 @@ function HomePage() {
 				</div>
 			</div>
 			<div className="menu-contain-text-left">
-				<p className="text-large homepage-text-large_homepage-text-lg__24_gZ">
+				<p className="text-center">
 					{/* Adăugăm DualSlider aici */}
 					<DualSlider
 						className="dual-slider"
@@ -73,7 +73,7 @@ function HomePage() {
 					<br />
 				</p>
 			</div>
-			<div className="text-large homepage-text-large_homepage-text-lg__24_gZ">
+			<div className="text-center">
 				We are committed to building long-term partnerships that evolve with
 				your business needs. We provide impactful, scalable, and user-friendly
 				digital products that drive your business growth globally.
