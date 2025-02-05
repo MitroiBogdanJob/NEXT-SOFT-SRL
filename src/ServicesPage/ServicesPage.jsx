@@ -35,7 +35,7 @@ const ServicesPage = () => {
 	return (
 		<>
 			<h6 className="title-text">Your ideas into software</h6>
-			<div className="first-text">
+			<div className="text-large text-center">
 				Crafting high-performance digital solutions that help businesses thrive.
 				By focusing on intuitive design, responsive functionality, and seamless
 				integration across platforms, we deliver impactful solutions that refine
@@ -96,7 +96,7 @@ const ServicesPage = () => {
 			</div>
 
 			<p
-				className="text-center"
+				className="text-large homepage-text-large_homepage-text-lg__24_gZ"
 				style={{ textAlign: "center", marginTop: "20px" }}
 			>
 				<Link to="/ContactForm" className="transparent-button">

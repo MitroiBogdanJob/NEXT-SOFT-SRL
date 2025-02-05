@@ -33,7 +33,7 @@ function HomePage() {
 	return (
 		<>
 			<h6 className="title-text">Software Solutions</h6>
-			<div className="text-center">
+			<div className="text-large text-center">
 				Unlock Your Business Potential with Custom Websites, Desktop
 				Applications, API Solutions and Video Editing. Let's Build Your Online
 				Success Together!
@@ -51,7 +51,7 @@ function HomePage() {
 				</div>
 			</div>
 			<div className="menu-contain-text-left">
-				<p className="text-center">
+				<p className="text-large text-center">
 					{/* Adăugăm DualSlider aici */}
 					<DualSlider
 						className="dual-slider"
