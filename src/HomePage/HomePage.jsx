@@ -70,18 +70,19 @@ function HomePage() {
 					<p className="first-text10">Desktop applications </p>
 					<p className="first-text10">Databases </p>
 					<p className="first-text10">Video editing </p>
-					<br /> We are committed to building long-term partnerships that evolve
-					with your business needs. We provide impactful, scalable, and{" "}
-					user-friendly digital products that drive your business growth
-					globally.
 					<br />
-					<br />
-					We have been harnessing technology to drive meaningful change.
-					Combining world-class engineering, industry expertise and a
-					people-centric mindset, we consult and partner with our customers to
-					create technological solutions that drive innovation and transform
-					businesses.
 				</p>
+			</div>
+			<div className="first-text">
+				We are committed to building long-term partnerships that evolve with
+				your business needs. We provide impactful, scalable, and user-friendly
+				digital products that drive your business growth globally.
+				<br />
+				<br />
+				We have been harnessing technology to drive meaningful change. Combining
+				world-class engineering, industry expertise and a people-centric
+				mindset, we consult and partner with our customers to create
+				technological solutions that drive innovation and transform businesses.{" "}
 			</div>
 		</>
 	);
