@@ -58,7 +58,6 @@ function HomePage() {
 						imagesTop={imagesTop}
 						imagesBottom={imagesBottom}
 					/>
-
 					<br />
 					<br />
 					<p style={{ fontSize: "1.7rem" }}>We specialize in: </p>
@@ -71,21 +70,17 @@ function HomePage() {
 					<p className="first-text10">Desktop applications </p>
 					<p className="first-text10">Databases </p>
 					<p className="first-text10">Video editing </p>
+					<br /> We are committed to building long-term partnerships that evolve
+					with your business needs. We provide impactful, scalable, and{" "}
+					user-friendly digital products that drive your business growth
+					globally.
 					<br />
-					<p>
-						{" "}
-						We are committed to building long-term partnerships that evolve with
-						your business needs. We provide impactful, scalable, and{" "}
-						user-friendly digital products that drive your business growth
-						globally.
-						<br />
-						<br />
-						We have been harnessing technology to drive meaningful change.
-						Combining world-class engineering, industry expertise and a
-						people-centric mindset, we consult and partner with our customers to
-						create technological solutions that drive innovation and transform
-						businesses.
-					</p>
+					<br />
+					We have been harnessing technology to drive meaningful change.
+					Combining world-class engineering, industry expertise and a
+					people-centric mindset, we consult and partner with our customers to
+					create technological solutions that drive innovation and transform
+					businesses.
 				</p>
 			</div>
 		</>
