@@ -34,12 +34,12 @@ function HomePage() {
 		<>
 			<h6 className="title-text">Software Solutions</h6>
 			<div className="first-text">
-				No matter what software you need, our team can develop it.
+				Unlock Your Business Potential with Custom Websites, Desktop
+				Applications, API Solutions and Video Editing. Let's Build Your Online
+				Success Together!
 				<br />
-				<strong className="strong-font-normal highlight">
-					Next Soft SRL
-				</strong>{" "}
-				is a leading provider of IT solutions.
+				<br />
+				No matter what software you need, our team can develop it.
 				<br />
 				<div>
 					{/* Link-ul stilizat ca buton */}
@@ -60,25 +60,21 @@ function HomePage() {
 					/>
 
 					<br />
-					<p className="first-text11">
-						Technology is our how. And people are our why!
-					</p>
 					<br />
-
-					<p className="first-text7">
-						At NEXT SOFT, we bring your ideas to life through expert development
-						and design services.
-						<br />
-						<br />
-						<p style={{ fontSize: "1.4rem" }}>We specialize in: </p>
-						<p className="first-text10">Desktop applications, </p>
-						<p className="first-text10">Web applications</p>
-						<p className="first-text10">Databases </p>
-						<p className="first-text10">APIs</p>
-						<p className="first-text10">Video editing </p>
-						<br />
+					<p style={{ fontSize: "1.7rem" }}>We specialize in: </p>
+					<br />
+					<p className="first-text10">Presentation Website </p>
+					<p className="first-text10"> E-commerce Websites </p>
+					<p className="first-text10">Costum Web Applications</p>
+					<p className="first-text10">API Solutions</p>
+					<p className="first-text10">Desktop applications </p>
+					<p className="first-text10">Databases </p>
+					<p className="first-text10">Video editing </p>
+					<br />
+					<p>
+						{" "}
 						We are committed to building long-term partnerships that evolve with
-						yourbusiness needs. We provide impactful, scalable, and{" "}
+						your business needs. We provide impactful, scalable, and{" "}
 						user-friendly digital products that drive your business growth
 						globally.
 						<br />
