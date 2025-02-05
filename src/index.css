@@ -123,3 +123,9 @@ input[type="submit"] {
 		width: 98%;
 	}
 }
+
+@media (max-width: 440px) {
+	.text-large homepage-text-large_homepage-text-lg__24_gZ {
+		font-size: 0.9rem;
+	}
+}

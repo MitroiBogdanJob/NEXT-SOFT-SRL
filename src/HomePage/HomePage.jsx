@@ -33,7 +33,7 @@ function HomePage() {
 	return (
 		<>
 			<h6 className="title-text">Software Solutions</h6>
-			<div className="first-text">
+			<div className="text-large homepage-text-large_homepage-text-lg__24_gZ">
 				Unlock Your Business Potential with Custom Websites, Desktop
 				Applications, API Solutions and Video Editing. Let's Build Your Online
 				Success Together!
@@ -73,7 +73,7 @@ function HomePage() {
 					<br />
 				</p>
 			</div>
-			<div className="first-text">
+			<div className="text-large homepage-text-large_homepage-text-lg__24_gZ">
 				We are committed to building long-term partnerships that evolve with
 				your business needs. We provide impactful, scalable, and user-friendly
 				digital products that drive your business growth globally.
