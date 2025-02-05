@@ -147,9 +147,9 @@ textarea {
 @media (max-width: 410px) {
 	@media (max-width: 410px) {
 		.formcontact {
-			width: 90%; /* Asigură că formularul se încadrează corect */
+			width: 60%; /* Asigură că formularul se încadrează corect */
 			align-items: center; /* Centrează câmpurile corect */
-			padding-left: 4%; /* Elimină padding-ul care împingea formularul */
+			padding-left: 21%; /* Elimină padding-ul care împingea formularul */
 		}
 
 		label {
@@ -159,7 +159,7 @@ textarea {
 
 		input,
 		textarea {
-			width: 100%; /* Le face mai late, dar păstrează un aspect bun */
+			width: 120%; /* Le face mai late, dar păstrează un aspect bun */
 		}
 
 		.submit {
