@@ -128,6 +128,12 @@ textarea {
 	font-size: 16px; /* Dimensiune font mai mare */
 }
 
+@media (max-width: 1600px) {
+	input,
+	textarea {
+		width: 48%; /* Le face mai late, dar păstrează un aspect bun */
+	}
+}
 @media (max-width: 410px) {
 	@media (max-width: 410px) {
 		.formcontact {
@@ -144,7 +150,6 @@ textarea {
 		input,
 		textarea {
 			width: 100%; /* Le face mai late, dar păstrează un aspect bun */
-			max-width: 280px;
 		}
 
 		.submit {
