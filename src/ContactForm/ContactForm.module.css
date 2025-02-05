@@ -140,6 +140,9 @@ textarea {
 	textarea {
 		width: 75%; /* Le face mai late, dar păstrează un aspect bun */
 	}
+	.radioGroup {
+		width: 70%;
+	}
 }
 @media (max-width: 410px) {
 	@media (max-width: 410px) {
