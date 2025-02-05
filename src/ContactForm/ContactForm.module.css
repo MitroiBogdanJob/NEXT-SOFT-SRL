@@ -149,7 +149,7 @@ textarea {
 		.formcontact {
 			width: 60%; /* Asigură că formularul se încadrează corect */
 			align-items: center; /* Centrează câmpurile corect */
-			padding-left: 21%; /* Elimină padding-ul care împingea formularul */
+			padding-left: 20%; /* Elimină padding-ul care împingea formularul */
 		}
 
 		label {
