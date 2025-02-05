@@ -67,6 +67,7 @@ function HomePage() {
 					<p className="first-text10"> E-commerce Websites </p>
 					<p className="first-text10">Costum Web Applications</p>
 					<p className="first-text10">API Solutions</p>
+					<p className="first-text10">SEO optimization</p>
 					<p className="first-text10">Desktop applications </p>
 					<p className="first-text10">Databases </p>
 					<p className="first-text10">Video editing </p>
