@@ -35,8 +35,8 @@ function HomePage() {
 			<h6 className="title-text">Software Solutions</h6>
 			<div className="text-large homepage-text-large_homepage-text-lg__24_gZ">
 				Unlock Your Business Potential with Custom Websites, Desktop
-				Applications, API Solutions and Video Editing. Let's Build Your Online
-				Success Together!
+				Applications, API Solutions and Video Editing. Build Your Online Success
+				Together!
 				<br />
 				<br />
 				No matter what software you need, our team can develop it.

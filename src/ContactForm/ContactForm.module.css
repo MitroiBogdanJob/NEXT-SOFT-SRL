@@ -129,7 +129,39 @@ textarea {
 }
 
 @media (max-width: 410px) {
-	textarea {
-		width: 90%; /* sau o valoare specifică, de ex. 600px */
+	@media (max-width: 410px) {
+		.formcontact {
+			width: 100%; /* Asigură că formularul se încadrează corect */
+			align-items: center; /* Centrează câmpurile corect */
+			padding-left: 0; /* Elimină padding-ul care împingea formularul */
+		}
+
+		label {
+			text-align: center; /* Centrează textul etichetelor */
+			width: 100%;
+		}
+
+		input,
+		textarea {
+			width: 100%; /* Le face mai late, dar păstrează un aspect bun */
+			max-width: 280px;
+		}
+
+		.submit {
+			display: block; /* Face butonul vizibil */
+			padding: 10px;
+			width: 90%;
+			background-color: red;
+			color: white;
+			border: none;
+			text-align: center;
+		}
+		.radioGroup {
+			display: flex;
+			gap: 10px; /* Spațiu între butoane */
+			justify-content: center; /* Centrează opțiunile pe orizontală */
+			flex-wrap: nowrap; /* Previne trecerea pe linia următoare */
+			width: 99%;
+		}
 	}
 }

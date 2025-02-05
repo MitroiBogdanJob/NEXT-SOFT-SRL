@@ -144,7 +144,7 @@ function ContactForm() {
 
 					<br />
 
-					<button type="submit">Submit</button>
+					<button className="submit" type="submit">Submit</button>
 				</form>
 			) : (
 				<p className={styles.confirmationMessage}>
