@@ -172,11 +172,10 @@ textarea {
 			text-align: center;
 		}
 		.radioGroup {
-			display: flex;
 			gap: 10px; /* Spațiu între butoane */
 			justify-content: center; /* Centrează opțiunile pe orizontală */
 			flex-wrap: nowrap; /* Previne trecerea pe linia următoare */
-			width: 99%;
+			width: 70%;
 		}
 	}
 }
