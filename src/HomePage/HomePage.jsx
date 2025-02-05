@@ -63,7 +63,7 @@ function HomePage() {
 					<br />
 					<p style={{ fontSize: "1.7rem" }}>We specialize in: </p>
 					<br />
-					<p className="first-text10">Presentation Website </p>
+					<p className="first-text10">Presentation Websites </p>
 					<p className="first-text10"> E-commerce Websites </p>
 					<p className="first-text10">Costum Web Applications</p>
 					<p className="first-text10">API Solutions</p>
