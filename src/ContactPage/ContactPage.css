@@ -14,7 +14,7 @@
 	position: absolute;
 	width: 100%;
 	height: 70%;
-	background-image: url("./ImageBehindContactUS/contactUsImg.jpg"); /* Imaginea de fundal */
+	/*background-image: url("./ImageBehindContactUS/contactUsImg.jpg"); /* Imaginea de fundal */
 	background-size: cover; /* Acoperă complet containerul */
 	background-position: center center; /* Centrează imaginea */
 	background-repeat: no-repeat; /* Fără repetare */
